@@ -1,0 +1,237 @@
+.FullNav {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+}
+
+     .FullNav-RowWrap {
+        width: 100%;
+        height: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        position: relative;
+    }
+        .FullNav-RowWrap-Top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .FullNav-RowWrap-Bottom {
+        }
+
+
+/* -- Top Row ------------- */
+        .FullNav-TopRow {
+            width: 100%;
+            height: 35px;
+            background-color: #141414;
+        }
+            .FullNav-ShippingOffer {
+                font-size: 10px;
+                font-weight: 600;
+                color: #FFF;
+                margin-left: 20px;
+            }
+
+            .FullNav-TopUserToolsWrap {
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+                .FullNav-RetailerLink {
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                   width: 130px;
+                   height: 100%; 
+                   padding: 0 10px;
+                   margin-right: 20px;
+                   cursor: pointer;
+                }
+                    .FullNav-RetailerIcon {
+                        width: 15px;
+                        height: 15px;
+                        background: url('../../../Assets/Icons&Logos/FullNav/LocationIcon.svg');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+
+                    .FullNav-RetailerText {
+                        font-size: 10px;
+                        font-weight: 600;
+                        color: #FFF;
+
+                    }
+
+                .FullNav-EnglishWrap {
+                    width: 70px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 10px;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
+                    .FullNav-FlagIcon {
+                        width: 30px;
+                        height: 15px;
+                        background: url('../../../Assets/Icons&Logos/FullNav/AmericanFlagIcon.svg');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                    
+                    .FullNav-EnglishText {
+                        font-size: 10px;
+                        font-weight: 600;
+                        color: #FFF;
+                    }
+
+                .FullNav-SignInButton {
+                    width: 110px;
+                    height: 100%;
+                    background-color: #4E4E4E;
+                    color: #FFF;
+                    font-size: 10px;
+                    font-weight: 600;
+                    color: #FFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+
+
+
+
+
+/* -- Bottom Row ------------- */
+        .FullNav-BottomRow {
+            width: 100%;
+            height: 55px;
+            background-color: #FFF;
+            position: relative;
+        }
+
+            .FullNav-Logo {
+                width: 150px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: url('../../../Assets/Icons&Logos/FullNav/SpecializedNavLogo.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+
+            .FullNav-LinkWrapper {
+                text-align: center;
+                height: 100%;
+            }
+
+                .FullNav-LinkList {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                    .FullNav-LinkItem {
+                        padding: 0 30px;
+                    }
+
+                        .FullNav-Link {
+                            font-size: 10px;
+                            color: #141414;
+                            font-weight: 600;
+                            white-space: nowrap;
+                        }
+
+            .FullNav-BottomUserToolsWrap {
+                height: 100%;
+                width: 100px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+                .FullNav-Icon {
+                    width: 18px;
+                    height: 18px;
+                    cursor: pointer;
+                }
+
+                    .FullNav-Search {
+                        background: url('../../../Assets/Icons&Logos/FullNav/SearchIcon.svg');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+
+                    .FullNav-Cart {
+                        background: url('../../../Assets/Icons&Logos/FullNav/ShoppingCartIcon.svg');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1920px){
+    .FullNav-RowWrap {
+        max-width: 1700px;
+    }
+}
+
+@media screen and (max-width: 1750px){
+    .FullNav-RowWrap {
+        max-width: 1500px;
+    }
+}
+
+@media screen and (max-width: 1550px){
+    .FullNav-RowWrap {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .FullNav-RowWrap {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .FullNav {
+        display: none;
+    }
+    .FullNav-RowWrap {
+        margin-top: 60px;
+    }
+}

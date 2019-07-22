@@ -1,0 +1,144 @@
+.MobileNav {
+    width: 100%;
+    height: 70px;
+    position: fixed;;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    display: none;
+}
+
+    .MobileNav-TopRow {
+        width: 100%;
+        height: 25px;
+        background-color: #141414;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .MobileNav-ShippingOffer {
+            color: #FFF;
+            font-size: 10px;
+            font-weight: 600;
+
+        }
+
+    .MobileNav-BottomRow {
+        width: 100%;
+        height: 45px;
+        background-color: #FFF;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .MobileNav-LeftIcons {
+            position: absolute;;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 20px;
+            transition: all .5s ease-in-out;
+        }
+
+            .MobileNav-LeftIcon {
+                width: 18px;
+                height: 18px;
+                cursor: pointer;
+            }
+
+                .MobileNav-MenuIcon {
+                    background: url('../../../Assets/Icons&Logos/FullNav/MenuIcon.svg');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                .MobileNav-SearchIcon {
+                    background: url('../../../Assets/Icons&Logos/FullNav//SearchIcon.svg');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+        .MobileNav-Logo {
+            height: 100%;
+            width: 120px;
+            text-align: center;
+            background: url('../../../Assets/Icons&Logos/FullNav/SpecializedNavLogo.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .MobileNav-RightIcons {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 20px;
+            transition: all .5s ease-in-out;
+        }
+
+            .MobileNav-RightIcon {
+                width: 18px;
+                height: 18px;
+            }
+        
+                .MobileNav-UserIcon {
+                    background: url('../../../Assets/Icons&Logos/FullNav/UserIcon.svg');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                .MobileNav-CartIcon {
+                    background: url('../../../Assets/Icons&Logos/FullNav/ShoppingCartIcon.svg');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .MobileNav {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .MobileNav-RightIcons {
+        width: 60px;
+        margin-right: 10px;
+    }
+    .MobileNav-LeftIcons {
+        width: 60px;
+        margin-left: 10px;
+    }
+}
