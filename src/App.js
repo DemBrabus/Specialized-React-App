@@ -29,6 +29,7 @@ export default class App extends Component {
 
     this.state = {
       DrawerOpen: false,
+      SearchOpen: false,
       QuickCartOpen: false,
       UserSignedIn: false,
     }

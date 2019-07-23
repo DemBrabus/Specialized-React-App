@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     position: fixed;
-    left: -100%;
+    left: -100vw;
     top: 0;
     background-color: #ed1c24;
     color: #FFF;
@@ -37,6 +37,7 @@
                 justify-content: center;
                 align-items: center;
                 position: relative;
+                cursor: pointer;
             }
 
                 .NavDrawer-Bar {

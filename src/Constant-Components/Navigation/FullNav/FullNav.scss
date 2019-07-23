@@ -7,6 +7,12 @@
     z-index: 900;
 }
 
+    .FullNavWrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
      .FullNav-RowWrap {
         width: 100%;
         height: 100%;
@@ -29,6 +35,7 @@
             width: 100%;
             height: 35px;
             background-color: #141414;
+            z-index: 10;
         }
             .FullNav-ShippingOffer {
                 font-size: 10px;
@@ -121,6 +128,7 @@
             height: 55px;
             background-color: #FFF;
             position: relative;
+            z-index: 10;
         }
 
             .FullNav-Logo {
@@ -193,7 +201,65 @@
                         background-repeat: no-repeat;
                     }
 
+//SearchField
+.FullNav-SearchDrawer {
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    bottom: 100;
+    left: 0;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    transition: bottom .2s ease-in;
+}
 
+    .FullNav-SearchDrawerWrap {
+        width: 75%;
+        height:  80%;
+    }
+
+        .FullNav-SearchForm {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .FullNav-SearchField {
+                width: 88%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .FullNav-SearchFieldInput {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    border-bottom: 1px solid #141414;
+                    outline: none;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #141414;
+                    padding: 0 10px;
+                }
+
+            .FullNav-SearchButton {
+                width: 10%;
+                height: 100%;
+                border: 1px solid #141414;
+                outline: none;
+                font-size: 14px;
+                font-weight: 200;
+            }
+                .FullNav-SearchButton:hover {
+                    background-color: rgb(249, 249, 249);
+                    cursor: pointer;
+                }
 
        
 

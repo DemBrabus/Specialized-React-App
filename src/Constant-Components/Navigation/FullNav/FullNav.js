@@ -17,26 +17,28 @@ export default class FullNav extends Component {
     render() {
         return (
             <div className='FullNav'>
-                <div className='FullNav-TopRow'>
-                    <div className='FullNav-RowWrap FullNav-RowWrap-Top'>
-                        <p className='FullNav-ShippingOffer'>FREE SHIPPING ON ALL ORDERS OVER $150.
-                        </p>
-                        <div className='FullNav-TopUserToolsWrap'>
-                            <Link to='/retailers' className='FullNav-RetailerLink'>
-                                <div className='FullNav-RetailerIcon'></div>
-                                <p className='FullNav-RetailerText'>FIND A RETAILER</p>
-                            </Link>
+                <div className='FullNavWrap'>
+                    
+                    <div className='FullNav-TopRow'>
+                        <div className='FullNav-RowWrap FullNav-RowWrap-Top'>
+                            <p className='FullNav-ShippingOffer'>FREE SHIPPING ON ALL ORDERS OVER $150.
+                            </p>
+                            <div className='FullNav-TopUserToolsWrap'>
+                                <Link to='/retailers' className='FullNav-RetailerLink'>
+                                    <div className='FullNav-RetailerIcon'></div>
+                                    <p className='FullNav-RetailerText'>FIND A RETAILER</p>
+                                </Link>
 
-                            <div className='FullNav-EnglishWrap'>
-                                <div className='FullNav-FlagIcon'></div>
-                                <p className='FullNav-EnglishText'>EN</p>
+                                <div className='FullNav-EnglishWrap'>
+                                    <div className='FullNav-FlagIcon'></div>
+                                    <p className='FullNav-EnglishText'>EN</p>
+                                </div>
+
+                                <Link to='/user-sign-in' className='FullNav-SignInButton'>SIGN IN</Link>
+
                             </div>
-
-                            <Link to='/user-sign-in' className='FullNav-SignInButton'>SIGN IN</Link>
-
                         </div>
                     </div>
-                </div>
                 <div className='FullNav-BottomRow'>
                     <div className='FullNav-RowWrap FullNav-RowWrap-Bottom'>
                         
@@ -68,6 +70,19 @@ export default class FullNav extends Component {
                             <Link to='/user-cart' className='FullNav-Cart FullNav-Icon'></Link>
                         </div>
                     </div>
+                </div>
+
+                <div className='FullNav-SearchDrawer'>
+                    <div className='FullNav-SearchDrawerWrap'>
+                        <form action='/' className='FullNav-SearchForm'>
+                            <div className='FullNav-SearchField'>
+                                <input type='search' name='Nav Search' className='FullNav-SearchFieldInput'></input>
+                            </div>
+                            <button type='submit' className='FullNav-SearchButton'>SEARCH</button>
+                        </form>
+                    </div>
+                </div>
+
                 </div>
             </div>
         )
