@@ -3,6 +3,14 @@ import './MobileFooter.scss';
 import { Link } from 'react-router-dom';
 
 export default function MobileFooter() {
+
+
+    const HandleSubmit = (event) => {
+        event.preventDefault();
+    }
+
+
+
     return (
         <div className='MobileFooter'>
             <div className='MobileFooterWrapper'>
@@ -11,7 +19,7 @@ export default function MobileFooter() {
 
 
             <div className='MobileFooter-Top'>
-                <form className='MobileFooter-Form'>
+                <form className='MobileFooter-Form' onSubmit={HandleSubmit}>
                     <input className='MobileFooter-FormInput' type='email' name='email' placeholder='Join Our Newsletter'></input>
                     <button type='submit' className='MobileFooter-FormSubmit'>JOIN</button>
                 </form>

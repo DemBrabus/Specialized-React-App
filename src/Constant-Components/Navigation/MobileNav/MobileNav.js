@@ -2,7 +2,7 @@ import React from 'react';
 import './MobileNav.scss';
 import { Link } from 'react-router-dom';
 
-export default function MobileNav() {
+export default function MobileNav({ ToggleDrawer }) {
     return (
         <div className='MobileNav'>
             <div className='MobileNav-TopRow'>
@@ -11,7 +11,7 @@ export default function MobileNav() {
             </div>
             <div className='MobileNav-BottomRow'>
                 <div className='MobileNav-LeftIcons'>
-                    <div className='MobileNav-LeftIcon MobileNav-MenuIcon'></div>
+                    <div className='MobileNav-LeftIcon MobileNav-MenuIcon' onClick={ToggleDrawer}></div>
                     <div className='MobileNav-LeftIcon MobileNav-SearchIcon'></div>
                 </div>
 

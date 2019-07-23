@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom';
 import './App.scss';
 import './Styles/Global-Classes.scss';
@@ -19,38 +19,68 @@ import Retailer from './Pages/Retailer/Retailer';
 import InsideSpecialized from './Pages/Inside-Specialized/InsideSpecialized';
 import FullFooter from './Constant-Components/Footer/FullFooter/FullFooter';
 import MobileFooter from './Constant-Components/Footer/MobileFooter/MobileFooter';
+import NavDrawer from './Constant-Components/SideDrawers/NavDrawer/NavDrawer';
 
 
-function App() {
-  return (
-    <div className="App">
 
-      <FullNav />
-      <MobileNav />
+export default class App extends Component {
+  constructor(){
+    super();
 
-      <div className='AppWrapper'>
+    this.state = {
+      DrawerOpen: false,
+      QuickCartOpen: false,
+      UserSignedIn: false,
+    }
+  }
 
-      <Switch>
+      ToggleDrawer = () => {
+          this.setState((prevState) => {
+            return {DrawerOpen: !prevState.DrawerOpen}
+          });
+        }
 
-        <Route path='/' exact component={Landing} />
-        <Route path='/products/bikes' component={ProductPageBikes} />
-        <Route path='/products/trail' component={ProductPageTrail} />
-        <Route path='/products/downhill' component={ProductPageDownHill} />
-        <Route path='/products/s-works' component={ProductPageSWorks} />
-        <Route path='/user-sign-in' component={SignIn} />
-        <Route path='/user-cart' component={Cart} />
-        <Route path='/retailers' component={Retailer} />
-        <Route path='/inside-specialized' component={InsideSpecialized} />
+        CloseDrawer = () => {
+          this.setState({ DrawerOpen: false });
+        }
 
-      </Switch>
 
-      </div>
 
-      <FullFooter />
-      <MobileFooter />
+  render() {
+    return (
+     <div className="App">
+        <div className='AppInner'>
 
+          <FullNav />
+            <MobileNav ToggleDrawer={this.ToggleDrawer}
+                        />
+              <NavDrawer CloseDrawer={this.CloseDrawer}
+                          DrawerStatus={this.state.DrawerOpen}/>
+
+                <div className='AppContentWrap'>
+
+                  <Switch>
+
+                    <Route path='/' exact component={Landing} />
+                    <Route path='/products/bikes' component={ProductPageBikes} />
+                    <Route path='/products/trail' component={ProductPageTrail} />
+                    <Route path='/products/downhill' component={ProductPageDownHill} />
+                    <Route path='/products/s-works' component={ProductPageSWorks} />
+                    <Route path='/user-sign-in' component={SignIn} />
+                    <Route path='/user-cart' component={Cart} />
+                    <Route path='/retailers' component={Retailer} />
+                    <Route path='/inside-specialized' component={InsideSpecialized} />
+
+                  </Switch>
+
+                </div>
+
+            <FullFooter />
+          <MobileFooter />
+
+        </div>
     </div>
-  );
+    )
+  }
 }
 
-export default App;
