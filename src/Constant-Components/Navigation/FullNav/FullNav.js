@@ -22,7 +22,7 @@ export default class FullNav extends Component {
                         <p className='FullNav-ShippingOffer'>FREE SHIPPING ON ALL ORDERS OVER $150.
                         </p>
                         <div className='FullNav-TopUserToolsWrap'>
-                            <Link to='/' className='FullNav-RetailerLink'>
+                            <Link to='/retailers' className='FullNav-RetailerLink'>
                                 <div className='FullNav-RetailerIcon'></div>
                                 <p className='FullNav-RetailerText'>FIND A RETAILER</p>
                             </Link>
@@ -32,7 +32,7 @@ export default class FullNav extends Component {
                                 <p className='FullNav-EnglishText'>EN</p>
                             </div>
 
-                            <Link to='/' className='FullNav-SignInButton'>SIGN IN</Link>
+                            <Link to='/user-sign-in' className='FullNav-SignInButton'>SIGN IN</Link>
 
                         </div>
                     </div>
@@ -46,26 +46,26 @@ export default class FullNav extends Component {
                         <div className='FullNav-LinkWrapper'>
                             <ul className='FullNav-LinkList'>
                                 <li className='FullNav-LinkItem'>
-                                    <Link to='/'className='FullNav-Link'>BIKES</Link>
+                                    <Link to='/products/bikes' className='FullNav-Link'>BIKES</Link>
                                 </li>
                                 <li className='FullNav-LinkItem'>
-                                    <Link to='/'className='FullNav-Link'>TRAIL</Link>
+                                    <Link to='/products/trail' className='FullNav-Link'>TRAIL</Link>
                                 </li>
                                 <li className='FullNav-LinkItem'>
-                                    <Link to='/'className='FullNav-Link'>DOWNHILL</Link>
+                                    <Link to='/products/downhill' className='FullNav-Link'>DOWNHILL</Link>
                                 </li>
                                 <li className='FullNav-LinkItem'>
-                                    <Link to='/'className='FullNav-Link'>S-WORKS</Link>
+                                    <Link to='/products/s-works' className='FullNav-Link'>S-WORKS</Link>
                                 </li>
                                 <li className='FullNav-LinkItem'>
-                                    <Link to='/'className='FullNav-Link'>INSIDE SPECIALIZED</Link>
+                                    <Link to='/inside-specialized' className='FullNav-Link'>INSIDE SPECIALIZED</Link>
                                 </li>
                             </ul>
                         </div>
 
                         <div className='FullNav-BottomUserToolsWrap'>
                             <Link to='/' className='FullNav-Search FullNav-Icon'></Link>
-                            <Link to='/' className='FullNav-Cart FullNav-Icon'></Link>
+                            <Link to='/user-cart' className='FullNav-Cart FullNav-Icon'></Link>
                         </div>
                     </div>
                 </div>

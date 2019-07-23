@@ -18,8 +18,8 @@ export default function MobileNav() {
                 <Link to='/' className='MobileNav-Logo'></Link>
 
                 <div className='MobileNav-RightIcons'>
-                    <Link to='/' className='MobileNav-RightIcon MobileNav-UserIcon'></Link>
-                    <Link to='/' className='MobileNav-RightIcon MobileNav-CartIcon'></Link>
+                    <Link to='/user-sign-in' className='MobileNav-RightIcon MobileNav-UserIcon'></Link>
+                    <Link to='/user-cart' className='MobileNav-RightIcon MobileNav-CartIcon'></Link>
                 </div>
             </div>
         </div>
