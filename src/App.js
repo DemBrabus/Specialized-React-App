@@ -35,28 +35,46 @@ export default class App extends Component {
     }
   }
 
-      ToggleDrawer = () => {
+
+    //Nav Drawer
+        ToggleDrawer = () => {
           this.setState((prevState) => {
             return {DrawerOpen: !prevState.DrawerOpen}
           });
         }
+            CloseDrawer = () => {
+              this.setState({ DrawerOpen: false });
+            }
 
-        CloseDrawer = () => {
-          this.setState({ DrawerOpen: false });
+    //Search DropDown
+        ToggleSearch = () => {
+          this.setState((prevState) => {
+              return {SearchOpen: !prevState.SearchOpen}
+            });
         }
-
+            CloseSearch = () => {
+                this.setState({ SearchOpen: false });
+              }
 
 
   render() {
+
+    console.log(this.state.SearchOpen);
     return (
-     <div className="App">
+     <div className="App" >
         <div className='AppInner'>
 
-          <FullNav />
+          <FullNav ToggleSearch={this.ToggleSearch} 
+                    CloseSearch={this.CloseSearch}
+                    SearchStatus={this.state.SearchOpen}/>
             <MobileNav ToggleDrawer={this.ToggleDrawer}
+                        ToggleSearch={this.ToggleSearch} 
+                          CloseSearch={this.CloseSearch}
+                          SearchStatus={this.state.SearchOpen}
                         />
               <NavDrawer CloseDrawer={this.CloseDrawer}
-                          DrawerStatus={this.state.DrawerOpen}/>
+                          DrawerStatus={this.state.DrawerOpen}
+                          />
 
                 <div className='AppContentWrap'>
 
@@ -84,4 +102,3 @@ export default class App extends Component {
     )
   }
 }
-

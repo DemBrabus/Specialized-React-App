@@ -1,9 +1,95 @@
 .Landing {
     width: 100%;
-    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 200px;
 }
 
 .Landing-Hero {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 90px);
+    background: url('../../Assets/Images/Landing/LandingHero.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+    .Landing-Hero-Content {
+        color: #FFF;
+        padding-left: 80px;
+        padding-top: 8%;
+    }
+
+        .Landing-Hero-TitleWrap {
+            
+            .Landing-Hero-Title {
+                font-size: 75px;
+                font-weight: 900;
+            }
+        }
+
+        .Landing-Hero-Text {
+            font-size: 15px;
+        }
+
+        .Landing-Hero-Button {
+            width: 200px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4E4E4E;
+            font-weight: 600;
+            white-space: nowrap;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+
+            .Landing-Hero-Button:hover {
+                background-color: rgb(57, 57, 57);
+            }
+
+    .Landing-Hero-BottomHookWrap {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-left: 80px;
+        padding-bottom: 20px;
+        cursor: pointer;
+    }
+
+        .Landing-Hero-BottomHook {
+            font-size: 14px;
+            font-weight: 300;
+            color: #FFF;
+        }
+
+            .Bolder {
+                font-weight: 800;
+            }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .Landing {
+        margin-top: 70px;
+        margin-bottom: 445px;
+    }
+    .Landing-Hero {
+        height: calc(60vh - 70px);
+    }
+    .Landing-Hero-Content {
+        display: none;
+    }
+    .Landing-Hero-BottomHookWrap {
+        display: none;
+    }
 }

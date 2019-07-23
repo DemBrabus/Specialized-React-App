@@ -1,0 +1,36 @@
+.Landing {
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 200px;
+}
+
+.Landing-Hero {
+    width: 100%;
+    height: calc(100vh - 90px);
+    background: url('../../Assets/Images/Landing/LandingHero.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .Landing {
+        margin-top: 70px;
+        margin-bottom: 445px;
+    }
+    .Landing-Hero {
+        height: calc(60vh - 70px);
+    }
+}

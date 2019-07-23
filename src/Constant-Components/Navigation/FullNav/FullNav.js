@@ -1,23 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './FullNav.scss';
 import { Link } from 'react-router-dom';
 
-export default class FullNav extends Component {
-    constructor() {
-        super();
-        this.state = {
-            TempState: ''
-        }
+export default function FullNav({ ToggleSearch, CloseSearch, SearchStatus }) {
+
+    let SearchFieldClasses = 'FullNav-SearchDrawer';
+    if(SearchStatus){
+        SearchFieldClasses = 'FullNav-SearchDrawer ActiveSearch';
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
     }
 
 
-
-
-
-    render() {
-        return (
-            <div className='FullNav'>
-                <div className='FullNavWrap'>
+    return (
+        <div className='FullNav'>
+            <div className='FullNavWrap'>
                     
                     <div className='FullNav-TopRow'>
                         <div className='FullNav-RowWrap FullNav-RowWrap-Top'>
@@ -66,25 +65,25 @@ export default class FullNav extends Component {
                         </div>
 
                         <div className='FullNav-BottomUserToolsWrap'>
-                            <Link to='/' className='FullNav-Search FullNav-Icon'></Link>
+                            <div className='FullNav-Search FullNav-Icon' onClick={ToggleSearch}></div>
                             <Link to='/user-cart' className='FullNav-Cart FullNav-Icon'></Link>
                         </div>
                     </div>
                 </div>
 
-                <div className='FullNav-SearchDrawer'>
+                <div className={SearchFieldClasses}>
                     <div className='FullNav-SearchDrawerWrap'>
-                        <form action='/' className='FullNav-SearchForm'>
+                        <form onSubmit={handleSubmit} action='/' className='FullNav-SearchForm'>
                             <div className='FullNav-SearchField'>
                                 <input type='search' name='Nav Search' className='FullNav-SearchFieldInput'></input>
                             </div>
-                            <button type='submit' className='FullNav-SearchButton'>SEARCH</button>
+                            <button type='submit' className='FullNav-SearchButton' onClick={CloseSearch}>SEARCH</button>
                         </form>
                     </div>
                 </div>
 
                 </div>
-            </div>
-        )
-    }
+        </div>
+    )
 }
+

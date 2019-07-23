@@ -8,6 +8,14 @@
     display: none;
 }
 
+    .MobileNavWrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+
+//TopRow
     .MobileNav-TopRow {
         width: 100%;
         height: 25px;
@@ -15,6 +23,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 10;
     }
         .MobileNav-ShippingOffer {
             color: #FFF;
@@ -23,6 +32,8 @@
 
         }
 
+
+//BottomRow
     .MobileNav-BottomRow {
         width: 100%;
         height: 45px;
@@ -31,10 +42,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 10;
     }
 
+
+//Left Icons
         .MobileNav-LeftIcons {
-            position: absolute;;
+            position: absolute;
             left: 0;
             top: 0;
             height: 100%;
@@ -66,6 +80,8 @@
                     background-repeat: no-repeat;
                 }
 
+
+//Logo
         .MobileNav-Logo {
             height: 100%;
             width: 120px;
@@ -76,6 +92,8 @@
             background-repeat: no-repeat;
         }
 
+
+//Right Icons
         .MobileNav-RightIcons {
             position: absolute;
             right: 0;
@@ -110,7 +128,69 @@
 
 
 
+//SearchField
+.MobileNav-SearchDrawer {
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    transition: bottom .2s ease-in;
+}
 
+    .ActiveMobileSearch {
+        bottom: -45px;
+    }
+
+    .MobileNav-SearchDrawerWrap {
+        width: 90%;
+        height:  80%;
+    }
+
+        .MobileNav-SearchForm {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .MobileNav-SearchField {
+                width: 78%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .MobileNav-SearchFieldInput {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    border-bottom: 1px solid #141414;
+                    outline: none;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #141414;
+                    padding: 0 10px;
+                }
+
+            .MobileNav-SearchButton {
+                width: 15%;
+                height: 100%;
+                border: 1px solid #141414;
+                outline: none;
+                font-size: 14px;
+                font-weight: 200;
+            }
+                .MobileNav-SearchButton:hover {
+                    background-color: rgb(249, 249, 249);
+                    cursor: pointer;
+                }
 
 
 
@@ -140,5 +220,9 @@
     .MobileNav-LeftIcons {
         width: 60px;
         margin-left: 10px;
+    }
+    .MobileNav-SearchButton {
+        width: 20%;
+        font-size: 12px;
     }
 }
