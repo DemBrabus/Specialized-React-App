@@ -33,6 +33,7 @@
                 .LandingIG-IGInfo {
                     font-size: 18px;
                     font-weight: 500;
+                    color: #FFF;
                     margin-right: 10px;
                 }
 
@@ -64,6 +65,7 @@
                     width: 29%;
                     height: 100%;
                     background-color: #FFF;
+                    box-shadow: 4px 4px 10px black;
                 }
 
                     .LandingIG-Image1 {
@@ -102,3 +104,34 @@
                         background-size: cover;
                         background-repeat: no-repeat;
                     }
+
+
+
+
+@media screen and (max-width: 800px){
+    .LandingIG-ImagesWrap {
+        padding: 50px 40px;
+    }
+    .LandingIG-ImagesRow {
+        height: 200px;
+    }
+    .LandingIG-Title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .LandingIG-ImagesWrap {
+        padding: 35px 20px;
+    }
+    .LandingIG-ImagesRow {
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .LandingIG-IGInfoWrap {
+        padding-left: 20px;
+    }
+    .LandingIG-Title {
+        padding-bottom: 20px;
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './LandingIG.scss';
+import { Link } from 'react-router-dom';
 
 export default function LandingIG() {
     return (
@@ -9,7 +10,7 @@ export default function LandingIG() {
 
             <div className='LandingIG-IGInfoWrap'>
                 <div className='LandingIG-InfoImage'></div>
-                <p className='LandingIG-IGInfo'>iamspecialized_mtb</p>
+                <a href='https://www.instagram.com/iamspecialized_mtb/' target='_blank' className='LandingIG-IGInfo'>iamspecialized_mtb</a>
                 <span className='Verified'></span>
             </div>
 

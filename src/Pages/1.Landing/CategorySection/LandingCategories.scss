@@ -87,17 +87,25 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .LandingCategories-Title {
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-height: 600px) {
     .LandingCategories-WindowWrap {
         height: 40vw;
     }
+    
 }
 
 @media screen and (max-width: 600px){
-    .LandingCategories-Title {
-        font-size: 18px;
-    }
+    
     .LandingCategories-WindowWrap {
         height: 80vw;
+    }
+    .LandingCategories-WindowText {
+        font-size: 3vw;
     }
 }
