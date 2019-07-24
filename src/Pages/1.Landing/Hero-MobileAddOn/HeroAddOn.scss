@@ -1,0 +1,59 @@
+.HeroAddOn {
+    background-color: #000;
+    width: 100%;
+    height: 32vh;
+    display: none;
+    align-items: center;
+    color: #FFF;
+}
+
+    .HeroAddOn-Content {
+        width: 100%;
+        padding: 10px;
+        padding-left: 20px;
+    }
+
+        .HeroAddOn-TitleWrap {
+
+        }   
+
+            .HeroAddOn-Title {
+                font-size: 30px;
+                font-weight: 900;
+
+            }
+
+                .HeroAddOn-Text {
+                    font-size: 12px;
+                }
+
+                    .HeroAddOn-Button {
+                        width: 200px;
+                        height: 45px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #4E4E4E;
+                        font-weight: 600;
+                        white-space: nowrap;
+                        margin-top: 10px;
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .HeroAddOn {
+        // display: flex;
+    }
+}

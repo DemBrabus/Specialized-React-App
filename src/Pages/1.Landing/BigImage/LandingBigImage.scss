@@ -1,0 +1,37 @@
+.LandingBigImage {
+    width: 100%;
+    height: 120vh;
+    background: url('../../../Assets/Images/Landing/LandingBigImage.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+    .LandingBigImageTitle {
+        font-size: 8vw;
+        font-weight: 900;
+        padding-top: 60px;
+        padding-left: 60px;
+        color: #FFF;
+
+    }
+
+    .LandingBigImageTextWrap {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 30px;
+    }
+
+    .LandingBigImageText {
+        color: #FFF;
+        font-size: 14px;
+    }
+
+
+@media screen and (max-width: 1000px){
+    .LandingBigImage {
+        height: 75vh;
+    }
+}

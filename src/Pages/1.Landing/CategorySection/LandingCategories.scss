@@ -1,0 +1,103 @@
+.LandingCategories {
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    color: #FFF;
+}
+
+    .LandingCategories-Title {
+        padding-left: 30px;
+        font-size: 24px;
+        font-weight: 600;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .LandingCategories-WindowWrap {
+        width: 100%;
+        height: 60vw;
+        max-height: 700px;
+        display: flex;
+    }
+
+        .LandingCategories-Window {
+            width: 33.33%;
+            height: 90%;
+            position: relative;
+        }
+                    .LandingCategories-Window1 {
+                        background: url('../../../Assets/Images/Landing/TrailBGCategoires.png');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .LandingCategories-Window2 {
+                        background: url('../../../Assets/Images/Landing/DownHillBGCategories.png');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .LandingCategories-Window3 {
+                        background: url('../../../Assets/Images/Landing/SWorksBGCategories.png');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+
+            .LandingCategories-InnerWindow {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: #000;
+                opacity: .6;
+                transition: opacity .3s ease-in;
+                cursor: pointer;
+            }
+                .LandingCategories-InnerWindow:hover {
+                    opacity: 0;
+                }
+
+            .LandingCategories-WindowText {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1.8vw;
+                white-space: nowrap;
+                font-weight: 900;
+                color: #FFF;
+            }
+
+
+
+
+
+
+        
+
+
+
+@media screen and (max-width: 1000px){
+    .LandingCategories-Title {
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+    .LandingCategories-WindowWrap {
+        height: 40vw;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .LandingCategories-WindowWrap {
+        height: 40vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .LandingCategories-Title {
+        font-size: 18px;
+    }
+    .LandingCategories-WindowWrap {
+        height: 80vw;
+    }
+}
