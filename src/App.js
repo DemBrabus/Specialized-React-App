@@ -81,10 +81,10 @@ export default class App extends Component {
                   <Switch>
 
                     <Route path='/' exact component={Landing} />
-                    <Route path='/products/bikes' component={ProductPageBikes} />
-                    <Route path='/products/trail' component={ProductPageTrail} />
-                    <Route path='/products/downhill' component={ProductPageDownHill} />
-                    <Route path='/products/s-works' component={ProductPageSWorks} />
+                    <Route path='/shop/bikes' component={ProductPageBikes} />
+                    <Route path='/shop/trail' component={ProductPageTrail} />
+                    <Route path='/shop/downhill' component={ProductPageDownHill} />
+                    <Route path='/shop/s-works' component={ProductPageSWorks} />
                     <Route path='/user-sign-in' component={SignIn} />
                     <Route path='/user-cart' component={Cart} />
                     <Route path='/retailers' component={Retailer} />

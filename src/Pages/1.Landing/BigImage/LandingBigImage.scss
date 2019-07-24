@@ -17,6 +17,14 @@
 
     }
 
+    .LandingBigImageTitle2 {
+        font-size: 8vw;
+        font-weight: 900;
+        padding-left: 10%;
+        color: #FFF;
+
+    }
+
     .LandingBigImageTextWrap {
         position: absolute;
         bottom: 0;
@@ -33,5 +41,12 @@
 @media screen and (max-width: 1000px){
     .LandingBigImage {
         height: 75vh;
+        
+    }
+    .LandingBigImageTitle {
+        padding-left: 30px;
+    }
+    .LandingBigImageTitle2 {
+        padding-left: 30px;
     }
 }

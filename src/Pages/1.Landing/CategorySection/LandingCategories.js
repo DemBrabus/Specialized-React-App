@@ -8,15 +8,15 @@ export default function LandingCategories() {
             <p className='LandingCategories-Title'>EXPLORE OUR BIKES</p>
 
             <div className='LandingCategories-WindowWrap'>
-                <Link to='/products/trail' className='LandingCategories-Window LandingCategories-Window1'>
+                <Link to='/shop/trail' className='LandingCategories-Window LandingCategories-Window1'>
                     <div className='LandingCategories-InnerWindow'></div>
                     <p className='LandingCategories-WindowText'>TRAILS</p>
                 </Link>
-                <Link to='/products/downhill' className='LandingCategories-Window LandingCategories-Window2'>
+                <Link to='/shop/downhill' className='LandingCategories-Window LandingCategories-Window2'>
                     <div className='LandingCategories-InnerWindow'></div>
                     <p className='LandingCategories-WindowText'>DOWNHILL</p>
                 </Link>
-                <Link to='products/s-works' className='LandingCategories-Window LandingCategories-Window3'>
+                <Link to='shop/s-works' className='LandingCategories-Window LandingCategories-Window3'>
                     <div className='LandingCategories-InnerWindow'></div>
                     <p className='LandingCategories-WindowText'>S-WORKS</p>
                 </Link>

@@ -1,0 +1,32 @@
+.BikesHero {
+    width: 100%;
+    height: 55vh;
+    background: url('../../../Assets/Images/Bikes/BikesHero.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    .BikesHero-Title {
+        font-size: 40px;
+        font-weight: 700;
+        padding-left: 80px;
+        color: #FFF;
+    }
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .BikesHero {
+        align-items: flex-end;
+    }
+    .BikesHero-Title {
+        padding-bottom: 50px;
+        padding-left: 30px;
+    }
+}

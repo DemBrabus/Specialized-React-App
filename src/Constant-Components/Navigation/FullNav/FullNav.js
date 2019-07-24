@@ -47,16 +47,16 @@ export default function FullNav({ ToggleSearch, CloseSearch, SearchStatus }) {
                         <div className='FullNav-LinkWrapper'>
                             <ul className='FullNav-LinkList'>
                                 <li className='FullNav-LinkItem'>
-                                    <Link to='/products/bikes' className='FullNav-Link'>BIKES</Link>
+                                    <Link to='/shop/bikes' className='FullNav-Link'>BIKES</Link>
                                 </li>
                                 <li className='FullNav-LinkItem'>
-                                    <Link to='/products/trail' className='FullNav-Link'>TRAIL</Link>
+                                    <Link to='/shop/trail' className='FullNav-Link'>TRAIL</Link>
                                 </li>
                                 <li className='FullNav-LinkItem'>
-                                    <Link to='/products/downhill' className='FullNav-Link'>DOWNHILL</Link>
+                                    <Link to='/shop/downhill' className='FullNav-Link'>DOWNHILL</Link>
                                 </li>
                                 <li className='FullNav-LinkItem'>
-                                    <Link to='/products/s-works' className='FullNav-Link'>S-WORKS</Link>
+                                    <Link to='/shop/s-works' className='FullNav-Link'>S-WORKS</Link>
                                 </li>
                                 <li className='FullNav-LinkItem'>
                                     <Link to='/inside-specialized' className='FullNav-Link'>INSIDE SPECIALIZED</Link>

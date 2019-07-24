@@ -35,16 +35,16 @@ export default function NavDrawer({ CloseDrawer, DrawerStatus }) {
                 <div className='NavDrawer-Menu'>
                     <ul className='NavDrawer-MenuList'>
                         <li className='NavDrawer-MenuItem' >
-                            <Link to='/products/bikes' className='NavDrawer-MenuLink' onClick={CloseDrawer}>BIKES</Link>
+                            <Link to='/shop/bikes' className='NavDrawer-MenuLink' onClick={CloseDrawer}>BIKES</Link>
                         </li>
                         <li className='NavDrawer-MenuItem'>
-                            <Link to='/products/trail' className='NavDrawer-MenuLink' onClick={CloseDrawer}>TRAIL</Link>
+                            <Link to='/shop/trail' className='NavDrawer-MenuLink' onClick={CloseDrawer}>TRAIL</Link>
                         </li>
                         <li className='NavDrawer-MenuItem' >
-                            <Link to='/products/downhill' className='NavDrawer-MenuLink' onClick={CloseDrawer}>DOWNHILL</Link>
+                            <Link to='/shop/downhill' className='NavDrawer-MenuLink' onClick={CloseDrawer}>DOWNHILL</Link>
                         </li>
                         <li className='NavDrawer-MenuItem' >
-                            <Link to='/products/s-works' className='NavDrawer-MenuLink' onClick={CloseDrawer}>S-WORKS</Link>
+                            <Link to='/shop/s-works' className='NavDrawer-MenuLink' onClick={CloseDrawer}>S-WORKS</Link>
                         </li>
                         <li className='NavDrawer-MenuItem' >
                             <Link to='/retailers' className='NavDrawer-MenuLink' onClick={CloseDrawer}>FIND A RETAILER</Link>
