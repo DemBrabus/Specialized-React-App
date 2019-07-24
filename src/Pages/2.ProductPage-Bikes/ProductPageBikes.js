@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 import './ProductPageBikes.scss';
 import BikesHero from './Hero/BikesHero';
+import BikesContent from './BikesMainContent/BikesContent';
 
 export default class ProductPageBikes extends Component {
+    constructor(){
+        super();
+
+        this.state = {
+
+        }
+    }
     render() {
         return (
             <div className='ProductPageBikes'>
@@ -19,6 +27,7 @@ export default class ProductPageBikes extends Component {
 
 
                     <BikesHero />
+                    <BikesContent />
 
 
 

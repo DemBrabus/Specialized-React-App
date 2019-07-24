@@ -1,0 +1,52 @@
+.BikesMenu {
+    width: 250px;
+    height: 500px;
+    background-color: aliceblue;
+}
+
+    .BikesMenu-Wrap {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+        .BikesMenu-Title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .BikesMenu-Group {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+            .BikesMenu-SubTitle {
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+
+                .BikesMenu-FilterWrap {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 5px;
+                }       
+                
+                    .BikesMenu-FilterBox {
+                        width: 13px;
+                        height: 13px;
+                        border: 1px solid #141414;
+                        margin-right: 10px;
+                    }
+
+                    .BikesMenu-FilterText {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+
+        .BikesMenu-Note {
+            font-size: 12px;
+            font-weight: 300;
+            padding-right: 20px;
+        }
