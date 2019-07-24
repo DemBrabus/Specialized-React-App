@@ -1,0 +1,104 @@
+.LandingIG {
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+}
+
+    .LandingIG-Title {
+        font-size: 24px;
+        font-weight: 600;
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-bottom: 40px;
+    }
+
+        .LandingIG-IGInfoWrap {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+            .LandingIG-InfoImage {
+                width: 100px;
+                height: 100px;
+               background: url('../../../Assets/Images/Landing/IGLogo.png');
+               background-position: center;
+               background-size: contain;
+               background-repeat: no-repeat;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+                .LandingIG-IGInfo {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-right: 10px;
+                }
+
+                    .Verified {
+                        width: 20px;
+                        height: 20px;
+                        background: url('../../../Assets/Icons&Logos/IG/Verified.svg');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+
+        .LandingIG-ImagesWrap {
+            width: 100%;
+            padding: 80px;
+            padding-top: 40px;
+        }
+
+            .LandingIG-ImagesRow {
+                width: 100%;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-bottom: 40px;
+            }
+
+                .LandingIG-Image {
+                    width: 29%;
+                    height: 100%;
+                    background-color: #FFF;
+                }
+
+                    .LandingIG-Image1 {
+                        background: url('../../../Assets/Images/Landing/IG1.png');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .LandingIG-Image2 {
+                        background: url('../../../Assets/Images/Landing/IG2.png');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .LandingIG-Image3 {
+                        background: url('../../../Assets/Images/Landing/IG3.png');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .LandingIG-Image4 {
+                        background: url('../../../Assets/Images/Landing/IG4.png');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .LandingIG-Image5 {
+                        background: url('../../../Assets/Images/Landing/IG5.png');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .LandingIG-Image6 {
+                        background: url('../../../Assets/Images/Landing/IG6.png');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
