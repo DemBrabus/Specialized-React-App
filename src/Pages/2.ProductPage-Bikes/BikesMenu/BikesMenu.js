@@ -53,7 +53,7 @@ export default function BikesMenu() {
                     </div>
                 </div>
 
-                <p className='BikesMenu-Note'>Bikes manufactured and sold by Specialized are guaranteed for quality and functionality. We stand by our bikes and aim to produce the highest quality products.
+                <p className='BikesMenu-Note'>Bikes manufactured and sold by Specialized are guaranteed for quality and performance. We stand by our bikes and aim to produce the highest quality products.
                 Our bikes are made for riders, by riders.</p>
             </div>            
         </div>

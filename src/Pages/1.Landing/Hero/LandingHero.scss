@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 1550px){
   .Landing-Hero-Content {
-      padding-top: 300px;
+      padding-top: 250px;
   }
 }
 
@@ -80,11 +80,11 @@
 
 
 @media screen and (max-width: 1000px){
-    .Landing-Hero {
-        height: calc(70vh - 70px);
-    }
+    // .Landing-Hero {
+    //     height: calc(70vh - 70px);
+    // }
     .Landing-Hero-Content {
-      padding-top: 150px;
+    //   padding-top: 150px;
   }
     .Landing-Hero-BottomHookWrap {
         // display: none;
@@ -101,7 +101,7 @@
 @media screen and (max-width: 600px){
     .Landing-Hero-Content {
         padding-left: 20px;
-      padding-top: 150px;
+    //   padding-top: 150px;
   }
   .Landing-Hero-BottomHookWrap {
       padding-left: 20px;
@@ -115,7 +115,7 @@
 }
 @media screen and (max-height: 600px){
     .Landing-Hero-Content {
-      padding-top: 50px;
+    //   padding-top: 50px;
   }
 //   .Landing-Hero-Title {
 //       font-size: 60px;
