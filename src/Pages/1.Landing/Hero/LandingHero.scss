@@ -98,10 +98,23 @@
     }
 }
 
+
+@media screen and (max-height: 600px){
+    .Landing-Hero-Content {
+      padding-top: 100px;
+  }
+//   .Landing-Hero-Title {
+//       font-size: 60px;
+//   }
+//   .Landing-Hero-Text {
+//       font-size: 13px;
+//   }
+}
+
 @media screen and (max-width: 600px){
     .Landing-Hero-Content {
         padding-left: 20px;
-    //   padding-top: 150px;
+      padding-top: 150px;
   }
   .Landing-Hero-BottomHookWrap {
       padding-left: 20px;
@@ -112,15 +125,4 @@
       height: 40px;
       font-size: 14px;
   }
-}
-@media screen and (max-height: 600px){
-    .Landing-Hero-Content {
-    //   padding-top: 50px;
-  }
-//   .Landing-Hero-Title {
-//       font-size: 60px;
-//   }
-//   .Landing-Hero-Text {
-//       font-size: 13px;
-//   }
 }

@@ -1,61 +1,131 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './BikesMenu.scss';
+import { Link } from 'react-router-dom';
 
-export default function BikesMenu() {
-    return (
+export default class BikesMenu extends Component {
+    constructor(){
+        super();
+        this.state = {
+            Trail: false,
+            DownHill: false,
+            SWorks: false
+        }
+    }
+            
+        handleTrail = () => {
+            this.setState((prevState) => {
+            return {Trail: !prevState.Trail}
+          });
+        }
+
+        handleDownHill = () => {
+            this.setState((prevState) => {
+            return {DownHill: !prevState.DownHill}
+          });
+        }
+
+        handleSWorks = () => {
+            this.setState((prevState) => {
+            return {SWorks: !prevState.SWorks}
+          });
+        }
+
+
+
+    render() {
+
+
+            let TrailClasses = 'BikesMenu-SecondLevel';
+            let TrailAddIconClasses = 'BikesMenu-AddIcon ActiveLevel';
+            let TrailSubIconClasses = 'BikesMenu-SubIcon';
+            if(this.state.Trail){
+                TrailClasses = 'BikesMenu-SecondLevel ActiveLevel';
+                TrailAddIconClasses = 'BikesMenu-AddIcon';
+                TrailSubIconClasses = 'BikesMenu-SubIcon ActiveLevel'
+            }
+
+            let DownHillClasses = 'BikesMenu-SecondLevel';
+            let DownHillAddIconClasses = 'BikesMenu-AddIcon ActiveLevel';
+            let DownHillSubIconClasses = 'BikesMenu-SubIcon';
+            if(this.state.DownHill){
+                DownHillClasses = 'BikesMenu-SecondLevel ActiveLevel';
+                DownHillAddIconClasses = 'BikesMenu-AddIcon';
+                DownHillSubIconClasses = 'BikesMenu-SubIcon ActiveLevel'
+            }
+
+            let SWorksClasses = 'BikesMenu-SecondLevel';
+            let SWorksAddIconClasses = 'BikesMenu-AddIcon ActiveLevel';
+            let SWorksSubIconClasses = 'BikesMenu-SubIcon';
+            if(this.state.SWorks){
+                SWorksClasses = 'BikesMenu-SecondLevel ActiveLevel';
+                SWorksAddIconClasses = 'BikesMenu-AddIcon';
+                SWorksSubIconClasses = 'BikesMenu-SubIcon ActiveLevel'
+            }
+                
+
+
+
+        return (
         <div className='BikesMenu'>
             <div className='BikesMenu-Wrap'>
-                <p className='BikesMenu-Title'>Filters</p>
+                <p className='BikesMenu-Title'>SHORT CUTS</p>
 
-                <div className='BikesMenu-Group BikesMenu-Group1'>
-                    <p className='BikesMenu-SubTitle'>GROUPS</p>
-                    <div className='BikesMenu-FilterWrap'>
-                        <div className='BikesMenu-FilterBox'></div>
-                        <p className='BikesMenu-FilterText'>Bikes</p>
+                
+                <div className='BikesMenu-Group'>
+                    <p className='BikesMenu-SubTitle'>CATEGORY</p>
+                    <div className='BikesMenu-ItemWrap'>
+                        <div className='BikesMenu-PrimaryTextBox' onClick={this.handleTrail}>
+                            <p className={TrailAddIconClasses}>+</p>
+                            <p className={TrailSubIconClasses}>-</p>
+                            <p className='BikesMenu-Text'>Trail</p>
+                        </div>
+                        <div className={TrailClasses}>
+                            <Link to='' className='BikesMenu-SecondaryText'>StumpJumper Pro 29</Link>
+                            <Link to='' className='BikesMenu-SecondaryText'>StumpJumper Expert 29</Link>
+                            <Link to='' className='BikesMenu-SecondaryText'>StumpJumper Expert 27.5</Link>
+                            <Link to='' className='BikesMenu-SecondaryText'>Fuse Expert 29</Link>
+                            <Link to='' className='BikesMenu-SecondaryText'>Fuse Expert 27.5</Link>
+                        </div>
                     </div>
-                    <div className='BikesMenu-FilterWrap'>
-                        <div className='BikesMenu-FilterBox'></div>
-                        <p className='BikesMenu-FilterText'>Frame</p>
-                    </div>
-                </div>
-                <div className='BikesMenu-Group BikesMenu-Group2'>
-                    <p className='BikesMenu-SubTitle'>TYPE</p>
-                    <div className='BikesMenu-FilterWrap'>
-                        <div className='BikesMenu-FilterBox'></div>
-                        <p className='BikesMenu-FilterText'>Trail</p>
-                    </div>
-                    <div className='BikesMenu-FilterWrap'>
-                        <div className='BikesMenu-FilterBox'></div>
-                        <p className='BikesMenu-FilterText'>DownHill</p>
-                    </div>
-                    <div className='BikesMenu-FilterWrap'>
-                        <div className='BikesMenu-FilterBox'></div>
-                        <p className='BikesMenu-FilterText'>S-Works</p>
-                    </div>
-                </div>
-                <div className='BikesMenu-Group BikesMenu-Group3'>
-                    <p className='BikesMenu-SubTitle'>MODEL</p>
-                    <div className='BikesMenu-FilterWrap'>
-                        <div className='BikesMenu-FilterBox'></div>
-                        <p className='BikesMenu-FilterText'>StumpJumper</p>
-                    </div>
-                    <div className='BikesMenu-FilterWrap'>
-                        <div className='BikesMenu-FilterBox'></div>
-                        <p className='BikesMenu-FilterText'>Fuse</p>
-                    </div>
-                    <div className='BikesMenu-FilterWrap'>
-                        <div className='BikesMenu-FilterBox'></div>
-                        <p className='BikesMenu-FilterText'>Demo</p>
-                    </div>
-                    <div className='BikesMenu-FilterWrap'>
-                        <div className='BikesMenu-FilterBox'></div>
-                        <p className='BikesMenu-FilterText'>Epic</p>
-                    </div>
-                </div>
 
-                <p className='BikesMenu-Note'>Bikes manufactured and sold by Specialized are guaranteed for quality and performance. We stand by our bikes and aim to produce the highest quality products.
-                Our bikes are made for riders, by riders.</p>
-            </div>            
+                    <div className='BikesMenu-ItemWrap'>
+                        <div className='BikesMenu-PrimaryTextBox' onClick={this.handleDownHill}>
+                            <p className={DownHillAddIconClasses}>+</p>
+                            <p className={DownHillSubIconClasses}>-</p>
+                            <p className='BikesMenu-Text'>DownHill</p>
+                        </div>
+                        <div className={DownHillClasses}>
+                            <Link to='' className='BikesMenu-SecondaryText'>Demo Racer 29</Link>
+                            <Link to='' className='BikesMenu-SecondaryText'>Demo Expert 29</Link>
+                            <Link to='' className='BikesMenu-SecondaryText'>Demo Alloy 27.5</Link>
+                        </div>
+                    </div>
+
+                    <div className='BikesMenu-ItemWrap'>
+                        <div className='BikesMenu-PrimaryTextBox' onClick={this.handleSWorks}>
+                            <p className={SWorksAddIconClasses}>+</p>
+                            <p className={SWorksSubIconClasses}>-</p>
+                            <p className='BikesMenu-Text'>S-Works</p>
+                        </div>
+                        <div className={SWorksClasses}>
+                            <Link to='' className='BikesMenu-SecondaryText'>S-Works Demo 8</Link>
+                            <Link to='' className='BikesMenu-SecondaryText'>S-Works Epic EVO</Link>
+                            <Link to='' className='BikesMenu-SecondaryText'>S-Works StumpJumper 29</Link>
+                            <Link to='' className='BikesMenu-SecondaryText'>S-Works StumpJumper 27.5</Link>
+                            <Link to='' className='BikesMenu-SecondaryText'>S-Works Demo 8 Frame</Link>
+                        </div>
+                    </div>
+                </div>  
+
+                
+
+                    <p className='BikesMenu-Note'>Bikes manufactured and sold by Specialized are guaranteed for quality and performance. We stand by our bikes and aim to produce the highest quality products.
+                    Our bikes are made for riders, by riders.</p>
+
+                          
+            </div>
         </div>
-    )
+        )
+    }
 }
+

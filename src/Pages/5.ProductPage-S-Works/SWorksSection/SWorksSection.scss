@@ -1,0 +1,19 @@
+ .SWorksSection {
+            width: 100%;
+            position: relative;
+            margin-bottom: 20px;
+            // background-color: blanchedalmond;
+        }
+
+            .SWorksProduct-SectionTitle {
+                font-size: 22px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                padding-left: 1vw;
+            }
+
+                .SWorksProduct-ItemWrap {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                }

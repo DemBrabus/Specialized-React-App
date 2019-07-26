@@ -1,0 +1,19 @@
+ .DownHillSection {
+            width: 100%;
+            position: relative;
+            margin-bottom: 20px;
+            // background-color: blanchedalmond;
+        }
+
+            .DownHillProduct-SectionTitle {
+                font-size: 22px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                padding-left: 1vw;
+            }
+
+                .DownHillProduct-ItemWrap {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                }

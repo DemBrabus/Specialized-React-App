@@ -1,0 +1,23 @@
+.SWorksProducts {
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+    // background-color: azure;
+}
+
+    .SWorksProductsWrap {
+        width: 100%;
+        height: 100%;
+        // background-color: beige;
+    }
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .SWorksProducts {
+        width: 100%;
+    }
+}

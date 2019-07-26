@@ -1,0 +1,41 @@
+.TrailHero {
+    width: 100%;
+    height: 55vh;
+    background: url('../../../Assets/Images/Trail/TrailHero.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    .TrailHero-Title {
+        font-size: 40px;
+        font-weight: 700;
+        padding-left: 80px;
+        color: #FFF;
+    }
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .TrailHero {
+        align-items: flex-end;
+    }
+    .TrailHero-Title {
+        padding-bottom: 50px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .TrailHero {
+        background: url('../../../Assets/Images/Trail/MobileTrailHero.png');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

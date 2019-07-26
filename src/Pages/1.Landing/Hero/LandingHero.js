@@ -13,7 +13,7 @@ export default function LandingHero() {
                         <p className='Landing-Hero-Title'>THE WORKS</p>
                     </div>
 
-                    <p className='Landing-Hero-Text'>ITS ALL FUN AND GAMES UNTIL YOU CATCH TO MUCH AIR</p>
+                    <p className='Landing-Hero-Text'>ITS ALL FUN AND GAMES UNTIL YOU CATCH TOO MUCH AIR</p>
 
                     <div className='Landing-Hero-Button'>DEMO 8 FSR</div>
 

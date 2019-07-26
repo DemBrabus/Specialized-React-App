@@ -1,93 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './BikesProducts.scss';
+import BIKE_DATA from '../../../DataFiles/BikeData';
+import BikesSection from '../BikesProduct-Section/BikesSection';
 
-export default function BikesProducts() {
-    return (
-        <div  className='BikesProducts'>
+export default class BikesProducts extends Component {
+    constructor(){
+        super();
+
+        this.state = {
+            BikeData: BIKE_DATA
+        }
+    }
+    render() {
+
+        const {BikeData} = this.state;
+
+        return (
+            <div  className='BikesProducts'>
             <div className='BikesProductsWrap'>
 
-                <div className='BikesProduct-Section'>
-                    <p className='BikesProduct-SectionTitle'>TRAIL</p>
-                    <div className='BikesProduct-ItemWrap'>
+                {
 
-                        <div className='ProductCard'>
+                BikeData.map(({ id, ...otherBikesDataProps }) =>(
+                    <BikesSection key={id} {...otherBikesDataProps} />
+                ))
 
-                        </div>
+                }
 
-                        <div className='ProductCard'>
-                            
-                        </div>
-
-                        <div className='ProductCard'>
-                            
-                        </div>
-
-                        <div className='ProductCard'>
-                            
-                        </div>
-
-                        <div className='ProductCard'>
-                            
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className='BikesProduct-Section'>
-                    <p className='BikesProduct-SectionTitle'>DOWNHILL</p>
-                    <div className='BikesProduct-ItemWrap'>
-
-                        <div className='ProductCard'>
-
-                        </div>
-
-                        <div className='ProductCard'>
-                            
-                        </div>
-
-                        <div className='ProductCard'>
-                            
-                        </div>
-
-                        <div className='ProductCard'>
-                            
-                        </div>
-
-                        <div className='ProductCard'>
-                            
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className='BikesProduct-Section'>
-                    <p className='BikesProduct-SectionTitle'>S-WORKS</p>
-                    <div className='BikesProduct-ItemWrap'>
-
-                        <div className='ProductCard'>
-
-                        </div>
-
-                        <div className='ProductCard'>
-                            
-                        </div>
-
-                        <div className='ProductCard'>
-                            
-                        </div>
-
-                        <div className='ProductCard'>
-                            
-                        </div>
-
-                        <div className='ProductCard'>
-                            
-                        </div>
-
-                    </div>
-                </div>
 
             </div>
         </div>
-    )
+        )
+    }
 }
+

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom';
 import './App.scss';
 import './Styles/Global-Classes.scss';
+import ScrollToTop from './Constant-Components/ScrollToTop/ScrollToTop';
 
 //Navigation
 import FullNav from './Constant-Components/Navigation/FullNav/FullNav';
@@ -61,44 +62,50 @@ export default class App extends Component {
 
     console.log(this.state.SearchOpen);
     return (
-     <div className="App" >
-        <div className='AppInner'>
 
-          <FullNav ToggleSearch={this.ToggleSearch} 
-                    CloseSearch={this.CloseSearch}
-                    SearchStatus={this.state.SearchOpen}/>
-            <MobileNav ToggleDrawer={this.ToggleDrawer}
-                        ToggleSearch={this.ToggleSearch} 
-                          CloseSearch={this.CloseSearch}
-                          SearchStatus={this.state.SearchOpen}
-                        />
-              <NavDrawer CloseDrawer={this.CloseDrawer}
-                          DrawerStatus={this.state.DrawerOpen}
+      <ScrollToTop>
+
+        <div className="App" >
+          <div className='AppInner'>
+
+            <FullNav ToggleSearch={this.ToggleSearch} 
+                      CloseSearch={this.CloseSearch}
+                      SearchStatus={this.state.SearchOpen}/>
+              <MobileNav ToggleDrawer={this.ToggleDrawer}
+                          ToggleSearch={this.ToggleSearch} 
+                            CloseSearch={this.CloseSearch}
+                            SearchStatus={this.state.SearchOpen}
                           />
+                <NavDrawer CloseDrawer={this.CloseDrawer}
+                            DrawerStatus={this.state.DrawerOpen}
+                            />
 
-                <div className='AppContentWrap'>
+                  <div className='AppContentWrap'>
 
-                  <Switch>
+                    <Switch>
 
-                    <Route path='/' exact component={Landing} />
-                    <Route path='/shop/bikes' component={ProductPageBikes} />
-                    <Route path='/shop/trail' component={ProductPageTrail} />
-                    <Route path='/shop/downhill' component={ProductPageDownHill} />
-                    <Route path='/shop/s-works' component={ProductPageSWorks} />
-                    <Route path='/user-sign-in' component={SignIn} />
-                    <Route path='/user-cart' component={Cart} />
-                    <Route path='/retailers' component={Retailer} />
-                    <Route path='/inside-specialized' component={InsideSpecialized} />
+                      <Route path='/' exact component={Landing} />
+                      <Route path='/shop/bikes' component={ProductPageBikes} />
+                      <Route path='/shop/trail' component={ProductPageTrail} />
+                      <Route path='/shop/downhill' component={ProductPageDownHill} />
+                      <Route path='/shop/s-works' component={ProductPageSWorks} />
+                      <Route path='/user-sign-in' component={SignIn} />
+                      <Route path='/user-cart' component={Cart} />
+                      <Route path='/retailers' component={Retailer} />
+                      <Route path='/inside-specialized' component={InsideSpecialized} />
 
-                  </Switch>
+                    </Switch>
 
-                </div>
+                  </div>
 
-            <FullFooter />
-          <MobileFooter />
+              <FullFooter />
+            <MobileFooter />
 
-        </div>
-    </div>
+          </div>
+      </div>
+
+      </ScrollToTop>
+     
     )
   }
 }

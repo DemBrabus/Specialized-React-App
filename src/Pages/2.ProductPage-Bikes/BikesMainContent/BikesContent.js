@@ -3,8 +3,11 @@ import './BikesContent.scss';
 import BikesMenu from '../BikesMenu/BikesMenu';
 import BikesProducts from '../BikesProducts/BikesProducts';
 
-export default function BikesContent() {
+export default function BikesContent({ BikesData }) {
+    
+
     return (
+
         <div className='BikesContent'>
 
 

@@ -1,7 +1,7 @@
 .BikesMenu {
     width: 250px;
     height: 500px;
-    background-color: aliceblue;
+    padding-top: 5px;
 }
 
     .BikesMenu-Wrap {
@@ -26,29 +26,63 @@
                 margin-bottom: 8px;
             }
 
-                .BikesMenu-FilterWrap {
+                .BikesMenu-ItemWrap {
                     width: 100%;
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 5px;
+                    margin-bottom: 15px;
+                    margin-left: 5px;
                 }       
+
+                    .BikesMenu-PrimaryTextBox {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                    }
                 
-                    .BikesMenu-FilterBox {
-                        width: 13px;
-                        height: 13px;
-                        border: 1px solid #141414;
-                        margin-right: 10px;
+                        .BikesMenu-AddIcon {
+                            margin-right: 10px;
+                            font-weight: 600;
+                            display: none;
+                        }
+
+                        .BikesMenu-SubIcon {
+                            margin-right: 10px;
+                            font-weight: 600;
+                            display: none;
+                        }
+
+                        .BikesMenu-Text {
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                            .BikesMenu-Text:hover {
+                                font-weight: 700;
+                            }
+
+                .BikesMenu-SecondLevel {
+                    width: 100%;
+                    padding-left: 10px;
+                    display: none;
+                }
+
+                    .ActiveLevel {
+                        display: block;
                     }
 
-                    .BikesMenu-FilterText {
-                        font-size: 14px;
-                        font-weight: 400;
+                    .BikesMenu-SecondaryText {
+                        font-size: 12px;
+                        font-weight: 500;
+                        margin: 10px 0;
                     }
+                        .BikesMenu-SecondaryText:hover {
+                            font-weight: 600;
+                        }
+                
 
         .BikesMenu-Note {
             font-size: 12px;
             font-weight: 300;
-            // line-height: 18px;
+            line-height: 18px;
             padding-right: 20px;
         }
 
