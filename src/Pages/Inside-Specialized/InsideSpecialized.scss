@@ -1,4 +1,79 @@
 .InsideSpecialized {
     width: 100%;
-    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #141414;
 }
+
+.InsideWrap {
+        width: 100%;
+        max-width: 1920px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Inside-Section1 {
+        width: 100%;
+        height: calc(100vh);
+        background: url('../../Assets/Images/About/AboutHero.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding-right: 100px;
+    }
+
+        .Inside-Section1-Title {
+            font-size: 36px;
+            font-weight: 600;
+            color: #FFF;
+            margin-bottom: 30px;
+        }
+
+            .Inside-Section1-Text {
+                font-size: 16px;
+                font-weight: 400;
+                color: #FFF;
+                width: 400px;
+                line-height: 32px;
+                text-align: right;
+                margin-bottom: 20px;
+            }
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width: 1920px){
+//   .InsideWrap {
+//       max-width: 1700px;
+//   }
+// }
+
+// @media screen and (max-width: 1750px){
+//   .InsideWrap {
+//     max-width: 1500px;
+//   }
+// }
+
+// @media screen and (max-width: 1550px){
+//   .InsideWrap {
+//       max-width: 1200px;
+//   }
+// }
+
+// @media screen and (max-width: 1250px){
+//   .InsideWrap {
+//       max-width: 1000px;
+//   }
+// }

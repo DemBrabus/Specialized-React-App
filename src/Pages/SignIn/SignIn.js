@@ -46,7 +46,7 @@ export default class SignIn extends Component {
                             <li className='SignInText'>Register purchased bikes and warranties.</li>
                         </ul>
 
-                    <Link to='/' className='SignUp-Button'>CREATE ACCOUNT</Link>
+                    <Link to='/account-creation' className='SignUp-Button'>CREATE ACCOUNT</Link>
 
                     </div>
                 </div>

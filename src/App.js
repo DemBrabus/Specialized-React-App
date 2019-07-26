@@ -16,11 +16,13 @@ import ProductPageDownHill from './Pages/3.ProductPage-DownHill/ProductPageDownH
 import ProductPageSWorks from './Pages/5.ProductPage-S-Works/ProductPageSWorks';
 import Cart from './Pages/Cart/Cart';
 import SignIn from './Pages/SignIn/SignIn';
+import AccountCreation from './Pages/AccountCreation/AccountCreation';
 import Retailer from './Pages/Retailer/Retailer';
 import InsideSpecialized from './Pages/Inside-Specialized/InsideSpecialized';
 import FullFooter from './Constant-Components/Footer/FullFooter/FullFooter';
 import MobileFooter from './Constant-Components/Footer/MobileFooter/MobileFooter';
 import NavDrawer from './Constant-Components/SideDrawers/NavDrawer/NavDrawer';
+
 
 
 
@@ -90,6 +92,7 @@ export default class App extends Component {
                       <Route path='/shop/downhill' component={ProductPageDownHill} />
                       <Route path='/shop/s-works' component={ProductPageSWorks} />
                       <Route path='/user-sign-in' component={SignIn} />
+                      <Route path='/account-creation' component={AccountCreation} />
                       <Route path='/user-cart' component={Cart} />
                       <Route path='/retailers' component={Retailer} />
                       <Route path='/inside-specialized' component={InsideSpecialized} />
