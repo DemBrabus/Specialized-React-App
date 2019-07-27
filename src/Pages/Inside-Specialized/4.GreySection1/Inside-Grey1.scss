@@ -1,0 +1,21 @@
+.Inside-Grey1 {
+    width: 100%;
+    height: 250px;
+    font-size: 20px;
+    background-color: #292929;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    text-align: center;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 700px){
+    .Inside-Grey1 {
+        font-size: 16px;
+        height: 200px
+    }
+    
+}

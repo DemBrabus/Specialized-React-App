@@ -15,66 +15,7 @@
         align-items: center;
     }
 
-//SECTION - 1 ---
-    .Inside-Section1 {
-        width: 100%;
-        height: calc(100vh);
-        background: url('../../Assets/Images/About/AboutHero.png');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        padding-right: 100px;
-    }
 
-        .Inside-Section1-Title {
-            font-size: 36px;
-            font-weight: 600;
-            color: #FFF;
-            margin-bottom: 30px;
-        }
-
-            .Inside-Section1-Text {
-                font-size: 16px;
-                font-weight: 400;
-                color: #FFF;
-                width: 400px;
-                line-height: 32px;
-                text-align: right;
-                margin-bottom: 20px;
-            }
-
-        //SECTION 1 Mobile
-            .Inside-Section1-Mobile {
-                display: none;
-                width: 100%;
-                flex-direction: column;
-                align-items: center;
-                padding: 25px 40px;
-            }
-                    .Inside-Section1-Title-Mobile {
-                        font-size: 28px;
-                        font-weight: 600;
-                        margin-bottom: 20px;
-                    }
-
-                        .Inside-Section1-Text-Mobile {
-                            font-size: 14px;
-                            font-weight: 400;
-                            line-height: 28px;
-                        }
-        //SECTION 2
-            .Inside-Section2 {
-                width: 100%;
-                height: 120vh;
-                background: url('../../Assets/Images/About/AboutSection2.png');
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
 
         //SECTION 3    
             .Inside-Section3 {
