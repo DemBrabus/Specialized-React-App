@@ -15,6 +15,7 @@
         align-items: center;
     }
 
+//SECTION - 1 ---
     .Inside-Section1 {
         width: 100%;
         height: calc(100vh);
@@ -46,34 +47,154 @@
                 margin-bottom: 20px;
             }
 
+        //SECTION 1 Mobile
+            .Inside-Section1-Mobile {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                padding: 25px 40px;
+            }
+                    .Inside-Section1-Title-Mobile {
+                        font-size: 28px;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
+
+                        .Inside-Section1-Text-Mobile {
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 28px;
+                        }
+        //SECTION 2
+            .Inside-Section2 {
+                width: 100%;
+                height: 120vh;
+                background: url('../../Assets/Images/About/AboutSection2.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+        //SECTION 3    
+            .Inside-Section3 {
+                width: 100%;
+                height: 250px;
+                font-size: 20px;
+                background-color: #292929;
+                color: #FFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 30px;
+                text-align: center;
+                line-height: 28px;
+            }
+
+        //SECTION 4 
+        .Inside-Section4 {
+            width: 100%;
+            height: 100vh;
+            background: url('../../Assets/Images/About/AboutSection3.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 40px 0;
+        }
+
+        //SECTION 5
+        .Inside-Section5 {
+            width: 100%;
+            height: 200px;
+            font-size: 20px;
+            background-color: #292929;
+            color: #FFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 30px;
+            text-align: center;
+            line-height: 28px;
+        }
+
+    //SECTION 6
+    .Inside-Section6 {
+        width: 100%;
+        height: 80vh;
+        margin: 40px 0;
+    }
+
+
+
+    
+
+@media screen and (max-width: 1000px){
+   
+}
+
+
+@media screen and (max-width: 700px){
+    .Inside-Section1 {
+        height: 80vh;
+    }
+    .Inside-Section1-Mobile {
+        display: flex;
+    }
+    .Inside-Section1-Title {
+        display: none;
+    }
+    .Inside-Section1-Text {
+        display: none;
+    }
+     .Inside-Section2 {
+        height: 70vh;
+    }
+    .Inside-Section3 {
+        font-size: 3vw;
+    }
+    .Inside-Section4 {
+        height: 70vh;
+    }
+    .Inside-Section5 {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Inside-Section2 {
+        height: 40vh;
+    }
+    .Inside-Section3 {
+        font-size: 4vw;
+    }
+    .Inside-Section5 {
+        font-size: 4vw;
+    }
+}
 
 
 
 
+@media screen and (max-width: 1920px){
+  .InsideWrap {
+      max-width: 1700px;
+  }
+}
 
+@media screen and (max-width: 1750px){
+  .InsideWrap {
+    max-width: 1500px;
+  }
+}
 
+@media screen and (max-width: 1550px){
+  .InsideWrap {
+      max-width: 1200px;
+  }
+}
 
-
-// @media screen and (max-width: 1920px){
-//   .InsideWrap {
-//       max-width: 1700px;
-//   }
-// }
-
-// @media screen and (max-width: 1750px){
-//   .InsideWrap {
-//     max-width: 1500px;
-//   }
-// }
-
-// @media screen and (max-width: 1550px){
-//   .InsideWrap {
-//       max-width: 1200px;
-//   }
-// }
-
-// @media screen and (max-width: 1250px){
-//   .InsideWrap {
-//       max-width: 1000px;
-//   }
-// }
+@media screen and (max-width: 1250px){
+  .InsideWrap {
+      max-width: 1000px;
+  }
+}
