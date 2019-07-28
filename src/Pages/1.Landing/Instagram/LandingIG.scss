@@ -1,15 +1,17 @@
 .LandingIG {
     width: 100%;
-    background-color: #000;
-    color: #FFF;
+    // background-color: rgb(9, 9, 9);
+    // color: #FFF;
+    padding-bottom: 40px;
+    // border-top: 1px solid rgb(24, 24, 24);
 }
 
     .LandingIG-Title {
-        font-size: 24px;
+        padding-left: calc(5% + 15px);
+        font-size: 18px;
         font-weight: 600;
-        padding-top: 40px;
-        padding-left: 30px;
-        padding-bottom: 40px;
+        padding-top: 80px;
+        padding-bottom: 10px;
     }
 
         .LandingIG-IGInfoWrap {
@@ -33,7 +35,7 @@
                 .LandingIG-IGInfo {
                     font-size: 18px;
                     font-weight: 500;
-                    color: #FFF;
+                    // color: #FFF;
                     margin-right: 10px;
                 }
 
@@ -54,7 +56,7 @@
 
             .LandingIG-ImagesRow {
                 width: 100%;
-                height: 300px;
+                height: 360px;
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
@@ -65,7 +67,7 @@
                     width: 29%;
                     height: 100%;
                     background-color: #FFF;
-                    box-shadow: 4px 4px 10px black;
+                    // box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
                 }
 
                     .LandingIG-Image1 {

@@ -6,21 +6,26 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    padding: 10px;
 }
 
     .Landing-Hero-Content {
+        display: inline-block;
         color: #FFF;
         padding-left: 80px;
         padding-top: 8%;
         transition: padding-top .2s ease-in;
+        
     }
 
         .Landing-Hero-TitleWrap {
+            
         }
 
             .Landing-Hero-Title {
                 font-size: 75px;
                 font-weight: 900;
+                
             }
 
             .Landing-Hero-Text {
@@ -28,8 +33,9 @@
             }
 
         .Landing-Hero-Button {
-            width: 200px;
+            width: 130px;
             height: 45px;
+            font-size: 14px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -48,7 +54,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        padding-left: 80px;
+        padding-left: 90px;
         padding-bottom: 20px;
         cursor: pointer;
     }
@@ -72,63 +78,64 @@
 
 @media screen and (max-width: 1550px){
   .Landing-Hero-Content {
-      padding-top: 250px;
+      padding-top: 25%;
   }
 }
 
 
 
-
-@media screen and (max-width: 1000px){
-    // .Landing-Hero {
-    //     height: calc(70vh - 70px);
-    // }
-    .Landing-Hero-Content {
-    //   padding-top: 150px;
-  }
-    .Landing-Hero-BottomHookWrap {
-        // display: none;
-    }
+@media screen and (max-width: 1200px){
     .Landing-Hero-Title {
-        font-size: 40px;
+        font-size: 6vw;
     }
     .Landing-Hero-Text {
-        font-size: 10px;
-        width: 50%;
+        font-size: 12px;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 980px){
+    .Landing-Hero-Title {
+        font-size: 50px;
+    }
+    .Landing-Hero-Text {
+        width: 40%;
     }
 }
 
 
-@media screen and (max-height: 600px){
+@media screen and (max-height: 650px){
     .Landing-Hero-Content {
       padding-top: 100px;
   }
-//   .Landing-Hero-Title {
-//       font-size: 60px;
-//   }
-//   .Landing-Hero-Text {
-//       font-size: 13px;
-//   }
+  .Landing-Hero-Title {
+      font-size: 5vw;
+  }
+  .Landing-Hero-Text {
+        width: 35%;
+    }
 }
 
 @media screen and (max-width: 600px){
     .Landing-Hero-Content {
         padding-left: 20px;
-      padding-top: 150px;
+      
   }
   .Landing-Hero-BottomHookWrap {
       padding-left: 20px;
       padding-bottom: 40px;
   }
   .Landing-Hero-Button {
-      width: 150px;
+      width: 130px;
       height: 40px;
       font-size: 14px;
+  }
+  .Landing-Hero-Text {
+      width: 70%;
   }
 }
 
 @media screen and (max-width: 500px){
-    .Landing-Hero-Content {
-        padding-top: 70%;
+    .Landing-Hero-Title {
+        font-size: 40px;
     }
 }

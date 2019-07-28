@@ -1,23 +1,24 @@
 .LandingVideo {
     width: 100%;
-    height: 100vh;
-    background-color: #000;
-    padding-top: 40px;
+    background-color: rgb(9, 9, 9);
+    padding: 40px 0;
+    padding-bottom: 80px;
 }
 
     .LandingVideo-Title {
-        font-size: 24px;
+        padding-left: calc(5% + 15px);
+        font-size: 18px;
         font-weight: 600;
-        color: #FFF;
-        padding-left: 30px;
+        padding-top: 80px;
+        padding-bottom: 10px;
         white-space: nowrap;
-
+        color: #FFF;
     }
 
         .LandingVideo-VideoWrap {
             margin-top: 20px;
             width: 100%;
-            height: 80%;
+            height: 80vh;
             display: flex;
             justify-content: center;
             align-items: center;
