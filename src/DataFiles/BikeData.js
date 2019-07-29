@@ -9,7 +9,7 @@ const BIKE_DATA = [
                 name: 'StumpJumper Pro 29',
                 price: '6,300.00',
                 partNumber: 'No.94159-0001',
-                imageUrl: '../../Assets/Images/PreviewCard/StumpJumperPro29-PrevCard.png',
+                imageUrl: '../Assets/Images/PreviewCard/StumpJumperPro29-PrevCard.png',
             },
              {
                 id: 2,

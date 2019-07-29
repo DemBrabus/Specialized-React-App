@@ -4,12 +4,15 @@ import './LandingBigImage.scss';
 export default function LandingBigImage() {
     return (
         <div className='LandingBigImage'>
-            <p className='LandingBigImageTitle'>FINN</p>
-            <p className='LandingBigImageTitle2'>ILES</p>
-            <div className='LandingBigImageTextWrap'>
-                <p className='LandingBigImageText'>Duis aute irure dolor in reprehenderit</p>
-                <p className='LandingBigImageText'>in voluptate velit esse cillum dolore eu</p>
-                <p className='LandingBigImageText Bolder'>fugiat nulla pariatur.</p>
+            <div className='LandingBigImage-TitleWrap'>
+                <p className='LandingBigImage-Title'>FINN</p>
+                <p className='LandingBigImage-Title2'>ILES</p>
+            </div>
+            
+            <div className='LandingBigImage-TextWrap'>
+                <p className='LandingBigImage-Text'>Duis aute irure dolor in reprehenderit</p>
+                <p className='LandingBigImage-Text'>in voluptate velit esse cillum dolore eu</p>
+                <p className='LandingBigImage-Text Bolder'>fugiat nulla pariatur.</p>
             </div>
             
         </div>

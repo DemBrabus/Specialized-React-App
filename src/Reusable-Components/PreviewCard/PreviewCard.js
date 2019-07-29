@@ -5,7 +5,7 @@ export default function PreviewCard({ id, name, price, imageUrl, color }) {
     return (
         <div className='PreviewCard'>
             <div className='PreviewCard-Image' 
-                    style={{backgroundImage: `url(${imageUrl})`}} />
+                    style={{backgroundImage: "url(" + imageUrl + ")"}} />
             <div className='PreviewCard-Info'>
                 <p className='PreviewCard-Name'>{ name }</p>
                 <p className='PreviewCard-Price'>{ price }</p>
