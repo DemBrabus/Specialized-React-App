@@ -1,0 +1,138 @@
+.ItemSpecs {
+    width: 100%;
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    padding: 0 40px;
+    color: #FFF;
+    margin-bottom: 40px;
+}
+
+    .ItemSpecs-Wrap {
+        width: 100%;
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .ItemSpecs-LeftColumn {
+            width: 300px;
+            margin-right: 40px;
+        }
+
+            .ItemSpecs-DownloadManuals {
+                width: 250px;
+                padding: 20px 15px;
+                border: 1px solid #FFF;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all .2s ease-in;
+                cursor: pointer;
+            }
+                .ItemSpecs-DownloadManuals:hover {
+                    background-color: #262626;
+                }
+
+                .ItemSpecs-ManualsTitle {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                .ItemSpecs-ManualsWrap {
+                    width: 100%;
+                    display: none;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center
+                }
+
+                    .ItemSpecs-Manuals {
+                        font-size: 14px;
+                        font-weight: 300;
+                        margin: 10px 0px;
+                        cursor: pointer;
+                    }
+                        .ItemSpecs-Manuals:hover {
+                            color: #a5a5a5;
+                        }
+
+        .ItemSpecs-RightColumn {
+            width: auto;
+            padding: 0px 20px;
+        }
+
+            .ItemSpecs-Title {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+                .ItemSpecs-TableHeaderRow {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                    
+                    .ItemSpecs-TableHeader {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                .ItemSpecs-Table {
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+
+                    .ItemSpecs-TableRow {
+                        width: 100%;
+                    }
+
+                        .ItemSpec-TableData {
+                            font-size: 11px;
+                            font-weight: 400;
+                            line-height: 20px;
+                        }
+
+                        .TableData-Main {
+                            font-size: 10px;
+                            font-weight: 600;
+                            white-space: nowrap;
+                            width: 150px;
+                            padding: 5px;
+                            padding-left: 0;
+                            padding-top: 0;
+                            display: flex;
+                            align-self: flex-start;
+                        }
+
+                .ItemSpecs-Disclaimer {
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+
+
+
+
+@media screen and (max-width: 1000px){
+    .ItemSpecs {
+        padding: 0 20px;
+    }
+    .ItemSpecs-Wrap {
+        flex-direction: column;
+    }
+    .ItemSpecs-DownloadManuals {
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+    .ItemSpecs-LeftColumn {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+                        

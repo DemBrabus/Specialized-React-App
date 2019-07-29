@@ -27,6 +27,9 @@ import InsideSpecialized from './Pages/Inside-Specialized/InsideSpecialized';
 
   //ItemPage
   import StumpJumperPro29 from './Pages/6.ItemPages/Trail/StumpJumperPro29/ItemPage-StumpJumperPro29';
+import StumpJumperExpert29 from './Pages/6.ItemPages/Trail/StumpJumperExpert29/ItemPage-StumpJumperExpert29';
+
+  
 
 
 
@@ -105,7 +108,8 @@ export default class App extends Component {
 
 
                       <Route path='/shop/trail/stumpjumper-pro-29' exact component={StumpJumperPro29}/>
-
+                      <Route path='/shop/trail/stumpjumper-expert-29' exact component={StumpJumperExpert29}/>
+                      
                    
 
                     </Switch>

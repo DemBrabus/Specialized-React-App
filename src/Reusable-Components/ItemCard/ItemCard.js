@@ -17,8 +17,10 @@ export default function ItemCard() {
                     <p className='ItemCard-Color'>Dark Blue / Black / Metallic Black</p>
                     <form className='ItemCard-Form'>
                         <select className='ItemCard-Select'>
-                            <option className='ItemCard-Option' value='s2'>S2</option>
-                            <option className='ItemCard-Option' value='s3'>S3</option>
+                            <option className='ItemCard-Option' value='S'>S</option>
+                            <option className='ItemCard-Option' value='M'>M</option>
+                            <option className='ItemCard-Option' value='L'>L</option>
+                            <option className='ItemCard-Option' value='XL'>XL</option>
                         </select>
                     </form>
                 </div>
@@ -29,6 +31,7 @@ export default function ItemCard() {
                     </div>
                     
                     <p className='ItemCard-WishList'>+ WISHLIST</p>
+                    <p className='ItemCard-Stock' style={{color: '#38b555'}}>IN STOCK</p>
                 </div>
 
             </div>

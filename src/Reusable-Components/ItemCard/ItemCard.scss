@@ -22,7 +22,7 @@
             .ItemCard-Name {
                 font-size: 22px;
                 font-weight: 500;
-                margin-bottom: 20px;
+                margin-bottom: 35px;
             }
 
                 .ItemCard-PricePart {
@@ -31,7 +31,7 @@
                 }
 
                     .ItemCard-Price {
-                        font-size: 22px;
+                        font-size: 20px;
                         font-weight: 500;
                     }
 
@@ -50,7 +50,7 @@
             }
 
                 .ItemCard-Select {
-                    width: 200px;
+                    width: 150px;
                     height: 50px;
                     border: none;
                     border: 1px solid #141414;
@@ -102,3 +102,72 @@
                 .ItemCard-WishList:hover {
                     color: #D32E2E;
                 }
+
+            .ItemCard-Stock {
+                font-size: 12px;
+                margin-top: 15px;
+            }
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .ItemCardWrap {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .ItemCard-PricePart {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+        .ItemCard-PartNumber {
+            margin: 0;
+            margin-top: 10px;
+        }
+    .ItemCard-Column {
+        width: 100%;
+        flex-direction: column;
+    }
+    .ItemCard-Column2  {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+        .ItemCard-Color {
+            align-self: flex-start;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .ItemCard-Form{
+            width: 100%;
+        }
+
+        .ItemCard-Select {
+            width: 100%;
+        }
+
+    .ItemCard-ButtonWrap  {
+        flex-direction: column;
+    }
+        .ItemCard-Button {
+            margin: 5px 0;
+        }
+}
+
+@media screen and (max-width: 600px){
+    .ItemCard-Name {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .ItemCard-Price {
+        font-size: 14px;
+    }
+    .ItemCard-PartNumber {
+        font-size: 12px;
+    }
+    .ItemCard-Color {
+        font-size: 12px;
+    }
+}
