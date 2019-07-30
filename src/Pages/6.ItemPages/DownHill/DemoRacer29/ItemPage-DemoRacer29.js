@@ -14,7 +14,7 @@ export default function ItemPageDemoRacer29() {
                 </div>
             </div>
 
-            <div className='StumpJumperExpert29Wrap'>
+            <div className='DemoRacer29Wrap'>
 
                 <CarouselDemoRacer29 />
                 <ItemCardDemoRacer29 />

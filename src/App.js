@@ -30,6 +30,8 @@ import InsideSpecialized from './Pages/Inside-Specialized/InsideSpecialized';
 import StumpJumperExpert29 from './Pages/6.ItemPages/Trail/StumpJumperExpert29/ItemPage-StumpJumperExpert29';
 import StumpJumperExpert27 from './Pages/6.ItemPages/Trail/StumpJumperExpert27/ItemPage-StumpJumperExpert27';
 import ItemPageDemoRacer29 from './Pages/6.ItemPages/DownHill/DemoRacer29/ItemPage-DemoRacer29';
+import ItemPageDemoExpert29 from './Pages/6.ItemPages/DownHill/DemoExpert29/ItemPage-DemoExpert29';
+import ItemPageDemoAlloy27 from './Pages/6.ItemPages/DownHill/DemoAlloy27/ItemPage-DemoAlloy27';
 
   
 
@@ -115,7 +117,9 @@ export default class App extends Component {
 
                   {/* DownHill */}
                       <Route path='/shop/downhill/demo-racer-29' exact component={ItemPageDemoRacer29}/>
-
+                      <Route path='/shop/downhill/demo-expert-29' exact component={ItemPageDemoExpert29}/>
+                      <Route path='/shop/downhill/demo-alloy-27' exact component={ItemPageDemoAlloy27}/>
+                      
                   {/* S-Works */}
                       
                    

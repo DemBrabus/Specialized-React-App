@@ -110,30 +110,37 @@
 
 
 
+@media screen and (max-width: 1750px){
+    .Carousel-DemoRacer29{
+        height: 30vw;
+    }
+}
+@media screen and (max-width: 1550px){
+    .Carousel-DemoRacer29{
+        height: 27vw;
+    }
+}
 @media screen and (max-width: 1000px){
-    .Carousel-StumpJumperExpert29{
+    .Carousel-DemoRacer29{
         margin-top: 40px;
-        height: 35vw;
+        height: 32vw;
     }
 }
 
 @media screen and (max-width: 600px){
-    .Carousel-StumpJumperExpert29 {
-        margin-bottom: 20px;
+    .Carousel-DemoRacer29 {
     }
     .Carousel-Button {
-        width: 15px;
+        width: 17px;
         height: 20px;
-        display: none;
     }
     .Carousel-Button2 {
-        width: 15px;
+        width: 17px;
         height: 20px;
-        display: none;
     }
     .DOT1 {
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 10px;
     }
 }
 

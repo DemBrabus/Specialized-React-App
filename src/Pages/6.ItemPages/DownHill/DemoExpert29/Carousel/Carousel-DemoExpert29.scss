@@ -1,10 +1,10 @@
-.Carousel-StumpJumperExpert29 {
+.Carousel-DemoExpert29 {
     width: 100%;
-    height: 60vh;
+    height: 55vh;
     padding: 0 20px;
     margin-top: 55px;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
     .CarouselStyling {
@@ -13,29 +13,50 @@
         position: relative;
     }
 
-        .STE-29-Slide1 {
-            background: url('../../../../../Assets/Images/ProductItem/StumpJumperExpert29/StumpJumperExpert291.png');
+        .DemoEx-29-Slide1 {
+            background: url('../../../../../Assets/Images/ProductItem/DemoExpert29/DemoExpert29-1.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
-        .STE-29-Slide2 {
-            background: url('../../../../../Assets/Images/ProductItem/StumpJumperExpert29/StumpJumperExpert29-2.png');
+        .DemoEx-29-Slide2 {
+            background: url('../../../../../Assets/Images/ProductItem/DemoExpert29/DemoExpert29-2.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
-        .STE-29-Slide3 {
-            background: url('../../../../../Assets/Images/ProductItem/StumpJumperExpert29/StumpJumperExpert29-3.png');
+        .DemoEx-29-Slide3 {
+            background: url('../../../../../Assets/Images/ProductItem/DemoExpert29/DemoExpert29-3.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
-        .STE-29-Slide4 {
-            background: url('../../../../../Assets/Images/ProductItem/StumpJumperExpert29/StumpJumperExpert29-4.png');
+        .DemoEx-29-Slide4 {
+            background: url('../../../../../Assets/Images/ProductItem/DemoExpert29/DemoExpert29-4.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .DemoEx-29-Slide5 {
+            background: url('../../../../../Assets/Images/ProductItem/DemoExpert29/DemoExpert29-5.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .DemoEx-29-Slide6 {
+            background: url('../../../../../Assets/Images/ProductItem/DemoExpert29/DemoExpert29-6.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .DemoEx-29-Slide7 {
+            background: url('../../../../../Assets/Images/ProductItem/DemoExpert29/DemoExpert29-7.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -53,7 +74,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: 10px;
+        margin-top: 20px;
     }
     .Carousel-Button2 {
         border: none;
@@ -68,7 +89,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
         .DotWrap {
@@ -76,14 +97,14 @@
             display: flex;
             justify-content: center;
             position: absolute;
-            margin-top: 10px;
+            margin-top: 15px;
 
 
         }
 
             .DOT1 {
-                width: 17px;
-                height: 17px;
+                width: 12px;
+                height: 12px;
                 border-radius: 50%;
                 border: none;
                 background-color: rgb(169, 169, 169);
@@ -95,28 +116,27 @@
 
 
 
-
 @media screen and (max-width: 1750px){
-    .Carousel-DemoRacer29{
+    .Carousel-DemoExpert29{
         height: 30vw;
     }
 }
 @media screen and (max-width: 1550px){
-    .Carousel-DemoRacer29{
+    .Carousel-DemoExpert29{
         height: 27vw;
     }
 }
 @media screen and (max-width: 1000px){
-    .Carousel-DemoRacer29{
+    .Carousel-DemoExpert29{
         margin-top: 40px;
         height: 32vw;
     }
 }
 
 @media screen and (max-width: 600px){
-    .Carousel-DemoRacer29 {
+    .Carousel-DemoExpert29 {
     }
-   .Carousel-Button {
+    .Carousel-Button {
         width: 17px;
         height: 20px;
     }
