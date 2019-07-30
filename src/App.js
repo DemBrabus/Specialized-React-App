@@ -28,6 +28,8 @@ import InsideSpecialized from './Pages/Inside-Specialized/InsideSpecialized';
   //ItemPage
   import StumpJumperPro29 from './Pages/6.ItemPages/Trail/StumpJumperPro29/ItemPage-StumpJumperPro29';
 import StumpJumperExpert29 from './Pages/6.ItemPages/Trail/StumpJumperExpert29/ItemPage-StumpJumperExpert29';
+import StumpJumperExpert27 from './Pages/6.ItemPages/Trail/StumpJumperExpert27/ItemPage-StumpJumperExpert27';
+import ItemPageDemoRacer29 from './Pages/6.ItemPages/DownHill/DemoRacer29/ItemPage-DemoRacer29';
 
   
 
@@ -106,9 +108,15 @@ export default class App extends Component {
                       <Route path='/retailers' exact component={Retailer} />
                       <Route path='/inside-specialized' exact component={InsideSpecialized} />
 
-
+                  {/* Trail */}
                       <Route path='/shop/trail/stumpjumper-pro-29' exact component={StumpJumperPro29}/>
                       <Route path='/shop/trail/stumpjumper-expert-29' exact component={StumpJumperExpert29}/>
+                      <Route path='/shop/trail/stumpjumper-expert-27' exact component={StumpJumperExpert27}/>
+
+                  {/* DownHill */}
+                      <Route path='/shop/downhill/demo-racer-29' exact component={ItemPageDemoRacer29}/>
+
+                  {/* S-Works */}
                       
                    
 

@@ -1,0 +1,173 @@
+.ItemCard-StumpJumperExpert27 {
+    width: 100%;
+    position: relative;
+}
+
+    .ItemCardWrap {
+        width: 100%;
+        padding: 30px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .ItemCard-Column {
+
+        }
+
+            .ItemCard-Column2 {
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .ItemCard-Name {
+                font-size: 22px;
+                font-weight: 500;
+                margin-bottom: 35px;
+            }
+
+                .ItemCard-PricePart {
+                    display: flex;
+                    align-items: center;
+                }
+
+                    .ItemCard-Price {
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+
+                    .ItemCard-PartNumber {
+                        font-size: 14px;
+                        margin-left: 100px;
+                    }
+            .ItemCard-Color {
+                font-size: 14px;
+            }
+
+            .ItemCard-Form {
+                align-self: flex-start;
+                border-radius: 0px;
+                
+            }
+
+                .ItemCard-Select {
+                    width: 150px;
+                    height: 50px;
+                    border: none;
+                    border: 1px solid #141414;
+                    border-radius:0px;
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+
+                    .ItemCard-Option {
+                    }
+
+            .ItemCard-ButtonWrap {
+                display: flex;
+            }
+
+            .ItemCard-Button {
+                height: 50px;
+                padding: 0 20px;
+                margin: 0 5px;
+                border: 1px solid #141414;
+                background-color: transparent;
+                font-size: 14px;
+                font-weight: 300;
+                white-space: nowrap;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+                .BG-Red {
+                    background-color: #D32E2E;
+                    border: none;
+                    color: #FFF;
+                    
+                }
+                    .BG-Red:hover {
+                        background-color: rgb(179, 39, 39);
+                        
+
+                    }
+
+            .ItemCard-WishList {
+                font-size: 12px;
+                margin-top: 15px;
+                cursor: pointer;
+            }
+
+                .ItemCard-WishList:hover {
+                    color: #D32E2E;
+                }
+
+            .ItemCard-Stock {
+                font-size: 12px;
+                margin-top: 15px;
+            }
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .ItemCardWrap {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .ItemCard-PricePart {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+        .ItemCard-PartNumber {
+            margin: 0;
+            margin-top: 10px;
+        }
+    .ItemCard-Column {
+        width: 100%;
+        flex-direction: column;
+    }
+    .ItemCard-Column2  {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+        .ItemCard-Color {
+            align-self: flex-start;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .ItemCard-Form{
+            width: 100%;
+        }
+
+        .ItemCard-Select {
+            width: 100%;
+        }
+
+    .ItemCard-ButtonWrap  {
+        flex-direction: column;
+    }
+        .ItemCard-Button {
+            margin: 5px 0;
+        }
+}
+
+@media screen and (max-width: 600px){
+    .ItemCard-Name {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .ItemCard-Price {
+        font-size: 14px;
+    }
+    .ItemCard-PartNumber {
+        font-size: 12px;
+    }
+    .ItemCard-Color {
+        font-size: 12px;
+    }
+}
