@@ -1,0 +1,147 @@
+.Carousel-Demo8 {
+    width: 100%;
+    height: 55vh;
+    padding: 0 20px;
+    margin-top: 55px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+    .CarouselStyling {
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+
+        .Demo8-Slide1 {
+            background: url('../../../../../Assets/Images/ProductItem/Demo8/Demo8-Hero.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .Demo8-Slide2 {
+            background: url('../../../../../Assets/Images/ProductItem/Demo8/Demo8-1.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .Demo8-Slide3 {
+            background: url('../../../../../Assets/Images/ProductItem/Demo8/Demo8-2.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .Demo8-Slide4 {
+            background: url('../../../../../Assets/Images/ProductItem/Demo8/Demo8-3.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .Demo8-Slide5 {
+            background: url('../../../../../Assets/Images/ProductItem/Demo8/Demo8-4.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .Demo8-Slide6 {
+            background: url('../../../../../Assets/Images/ProductItem/Demo8/Demo8-5.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        
+
+    .Carousel-Button {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        left: 0;
+        margin-left: 5%;
+        width: 20px;
+        height: 30px;
+        background: url('../../../../../Assets/Icons&Logos/Carousel/ArrowLeft.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+    }
+    .Carousel-Button2 {
+        border: none;
+        padding: 0px 20px;
+        position: absolute;
+        right: 0;
+        margin-right: 5%;
+        background-color: transparent;
+        width: 20px;
+        height: 30px;
+        background: url('../../../../../Assets/Icons&Logos/Carousel/ArrowRight.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+    }
+
+        .DotWrap {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            margin-top: 15px;
+
+
+        }
+
+            .DOT1 {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                border: none;
+                background-color: rgb(169, 169, 169);
+                margin: 10px 10px;
+            }
+
+
+
+
+
+
+@media screen and (max-width: 1750px){
+    .Carousel-DemoRacer29{
+        height: 30vw;
+    }
+}
+@media screen and (max-width: 1550px){
+    .Carousel-DemoRacer29{
+        height: 27vw;
+    }
+}
+@media screen and (max-width: 1000px){
+    .Carousel-DemoRacer29{
+        margin-top: 40px;
+        height: 32vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .Carousel-DemoRacer29 {
+    }
+    .Carousel-Button {
+        width: 17px;
+        height: 20px;
+    }
+    .Carousel-Button2 {
+        width: 17px;
+        height: 20px;
+    }
+    .DOT1 {
+        width: 10px;
+        height: 10px;
+    }
+}
+
