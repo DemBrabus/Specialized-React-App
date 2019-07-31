@@ -8,7 +8,7 @@ export default function DownHillContent() {
         <div className='DownHillContent'>
             
             <DownHillProducts />
-            <DownHillExtras />
+            {/* <DownHillExtras /> */}
 
         </div>
     )

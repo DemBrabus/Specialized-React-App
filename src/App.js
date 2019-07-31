@@ -34,7 +34,8 @@ import ItemPageDemoExpert29 from './Pages/6.ItemPages/DownHill/DemoExpert29/Item
 import ItemPageDemoAlloy27 from './Pages/6.ItemPages/DownHill/DemoAlloy27/ItemPage-DemoAlloy27';
 import ItemPageDemo8 from './Pages/6.ItemPages/S-Works/Demo8/ItemPage-Demo8';
 import ItemPageEpicEVO from './Pages/6.ItemPages/S-Works/EpicEvo/ItemPage-EpicEVO';
-import ItemPageSWStumpJumper29 from './Pages/6.ItemPages/S-Works/S-StumpJumper29/ItemPage-SWStumpJumper29';
+import ItemPageSWStumpJumper29 from './Pages/6.ItemPages/S-Works/SWStumpJumper29/ItemPage-SWStumpJumper29';
+
 
   
 
@@ -127,6 +128,7 @@ export default class App extends Component {
                       <Route path='/shop/s-works/s-works-demo-8' exact component={ItemPageDemo8}/>
                       <Route path='/shop/s-works/s-works-epic-evo' exact component={ItemPageEpicEVO}/>
                       <Route path='/shop/s-works/s-works-stumpjumper-29' exact component={ItemPageSWStumpJumper29}/>
+                      
                    
 
                     </Switch>

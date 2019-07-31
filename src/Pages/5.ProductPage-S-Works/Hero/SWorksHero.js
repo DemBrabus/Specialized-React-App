@@ -5,7 +5,7 @@ export default function SWorksHero() {
     return (
         <div className='SWorksHero'>
 
-            <p className='SWorksHero-Title'>DOWNHILL</p>
+            <p className='SWorksHero-Title'>S-WORKS</p>
             
         </div>
     )

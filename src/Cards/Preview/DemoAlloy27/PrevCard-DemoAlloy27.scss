@@ -1,0 +1,71 @@
+.PrevCard-DemoAlloy27 {
+    width: 30.5%;
+    height: 30vw;
+    max-height: 700px;
+    margin: .7vw;
+}
+
+    .DemoAlloy27-Image {
+        width: 100%;
+        height: 60%;
+        background: url('../../../Assets/Images/PreviewCard/DemoAlloy27.5-PrevCard.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .PreviewCard-Info {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4%;
+    }
+
+        .PreviewCard-Name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .PreviewCard-Price {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .PreviewCard-ColorIcon {
+            width: 20px;
+            height: 20px;
+        }
+
+            .DA27 {
+                background: url('../../../Assets/Icons&Logos/PrevCard/DemoAlloy29.svg');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .PrevCard-DemoAlloy27 {
+        margin: 1vw;
+        width: 40%;
+        height: 60vw;
+    }
+}   
+
+@media screen and (max-width: 600px) {
+    .PrevCard-DemoAlloy27 {
+        margin: 1vw;
+        width: 100%;
+    }
+    .PreviewCard-ColorIcon {
+        display: none;
+    }
+}   

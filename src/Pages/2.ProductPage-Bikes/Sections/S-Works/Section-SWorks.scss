@@ -1,0 +1,25 @@
+.Section-SWorks {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+    .Section-Title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        padding-left: 1vw;
+    }
+
+        .Section-CardWrap {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+@media screen and (max-width: 600px){
+    .Section-CardWrap {
+        justify-content: center;
+    }
+}

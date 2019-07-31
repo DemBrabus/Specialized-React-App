@@ -8,9 +8,26 @@ export default function BikesSection({ title, items }) {
             <p className='BikesProduct-SectionTitle'>{title.toUpperCase()}</p>
             <div className='BikesProduct-ItemWrap'>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {/* 
                 {items.map(({ id, ...otherItemProps}) => (
                     <PreviewCard key={id} {...otherItemProps}/>
-                ))}
+                ))} */}
+
                 
             </div>
         </div>

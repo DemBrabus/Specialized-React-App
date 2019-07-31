@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function ItemCardSWStumpJumper29() {
     return (
         <div className='ItemCard-SWStumpJumper29'>
-             <div className='ItemCardWrap'>
+            <div className='ItemCardWrap'>
                 <div className='ItemCard-Column'>
                     <p className='ItemCard-Name'>S-Works StumpJumper 29</p>
                     <div className='ItemCard-PricePart'>

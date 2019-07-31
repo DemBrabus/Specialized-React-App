@@ -80,11 +80,11 @@ export default class BikesMenu extends Component {
                             <p className='BikesMenu-Text'>Trail</p>
                         </div>
                         <div className={TrailClasses}>
-                            <Link to='' className='BikesMenu-SecondaryText'>StumpJumper Pro 29</Link>
-                            <Link to='' className='BikesMenu-SecondaryText'>StumpJumper Expert 29</Link>
-                            <Link to='' className='BikesMenu-SecondaryText'>StumpJumper Expert 27.5</Link>
-                            <Link to='' className='BikesMenu-SecondaryText'>Fuse Expert 29</Link>
-                            <Link to='' className='BikesMenu-SecondaryText'>Fuse Expert 27.5</Link>
+                            <Link to='/shop/trail/stumpjumper-pro-29' className='BikesMenu-SecondaryText'>StumpJumper Pro 29</Link>
+                            <Link to='/shop/trail/stumpjumper-expert-29' className='BikesMenu-SecondaryText'>StumpJumper Expert 29</Link>
+                            <Link to='/shop/trail/stumpjumper-expert-27' className='BikesMenu-SecondaryText'>StumpJumper Expert 27.5</Link>
+                            <Link className='BikesMenu-SecondaryText'>Fuse Expert 29</Link>
+                            <Link className='BikesMenu-SecondaryText'>Fuse Expert 27.5</Link>
                         </div>
                     </div>
 
@@ -95,9 +95,9 @@ export default class BikesMenu extends Component {
                             <p className='BikesMenu-Text'>DownHill</p>
                         </div>
                         <div className={DownHillClasses}>
-                            <Link to='' className='BikesMenu-SecondaryText'>Demo Racer 29</Link>
-                            <Link to='' className='BikesMenu-SecondaryText'>Demo Expert 29</Link>
-                            <Link to='' className='BikesMenu-SecondaryText'>Demo Alloy 27.5</Link>
+                            <Link to='/shop/downhill/demo-racer-29' className='BikesMenu-SecondaryText'>Demo Racer 29</Link>
+                            <Link to='/shop/downhill/demo-expert-29' className='BikesMenu-SecondaryText'>Demo Expert 29</Link>
+                            <Link to='/shop/downhill/demo-alloy-27' className='BikesMenu-SecondaryText'>Demo Alloy 27.5</Link>
                         </div>
                     </div>
 
@@ -108,11 +108,11 @@ export default class BikesMenu extends Component {
                             <p className='BikesMenu-Text'>S-Works</p>
                         </div>
                         <div className={SWorksClasses}>
-                            <Link to='' className='BikesMenu-SecondaryText'>S-Works Demo 8</Link>
-                            <Link to='' className='BikesMenu-SecondaryText'>S-Works Epic EVO</Link>
-                            <Link to='' className='BikesMenu-SecondaryText'>S-Works StumpJumper 29</Link>
-                            <Link to='' className='BikesMenu-SecondaryText'>S-Works StumpJumper 27.5</Link>
-                            <Link to='' className='BikesMenu-SecondaryText'>S-Works Demo 8 Frame</Link>
+                            <Link to='/shop/s-works/s-works-demo-8' className='BikesMenu-SecondaryText'>S-Works Demo 8</Link>
+                            <Link to='/shop/s-works/s-works-epic-evo' className='BikesMenu-SecondaryText'>S-Works Epic EVO</Link>
+                            <Link to='/shop/s-works/s-works-stumpjumper-29' className='BikesMenu-SecondaryText'>S-Works StumpJumper 29</Link>
+                            <Link className='BikesMenu-SecondaryText'>S-Works StumpJumper 27.5</Link>
+                            <Link className='BikesMenu-SecondaryText'>S-Works Demo 8 Frame</Link>
                         </div>
                     </div>
                 </div>  
