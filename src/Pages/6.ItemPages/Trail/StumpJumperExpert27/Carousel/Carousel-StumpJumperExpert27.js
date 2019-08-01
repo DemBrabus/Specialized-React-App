@@ -13,12 +13,12 @@ export default class CarouselStumpJumperExpert27 extends Component {
                         naturalSlideHeight={30}
                         totalSlides={6}>
                             <Slider>
-                            <Slide className='STE-29-Slide1' index={0}></Slide>
-                            <Slide className='STE-29-Slide2' index={1}></Slide>
-                            <Slide className='STE-29-Slide3' index={2}></Slide>
-                            <Slide className='STE-29-Slide4' index={3}></Slide>
-                            <Slide className='STE-29-Slide5' index={4}></Slide>
-                            <Slide className='STE-29-Slide6' index={5}></Slide>
+                            <Slide className='STE-27-Slide1' index={0}></Slide>
+                            <Slide className='STE-27-Slide2' index={1}></Slide>
+                            <Slide className='STE-27-Slide3' index={2}></Slide>
+                            <Slide className='STE-27-Slide4' index={3}></Slide>
+                            <Slide className='STE-27-Slide5' index={4}></Slide>
+                            <Slide className='STE-27-Slide6' index={5}></Slide>
                             </Slider>
 
                             <div className='DotWrap'>

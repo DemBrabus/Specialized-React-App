@@ -1,0 +1,166 @@
+.Search-Retailer {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+    .Retailer-SearchForm {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .SearchForm-SearchSide {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+        }
+
+            .Retailer-SearchTitle {
+                font-size: 32px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            .SearchForm-InputWrap {
+                width: 100%;
+                display: flex;
+                margin-bottom: 30px;
+            }
+
+                .Retailer-SearchInput {
+                    width: 100%;
+                    height: 50px;
+                    font-size: 14px;
+                    padding: 0 10px;
+                    color: #141414;
+                    border: 1px solid #d2d2d2;
+                    background-color: #F7F7F7;
+                    margin-right: 10px;
+                }
+
+            .SearchForm-MilageWrap {
+                display: flex;
+                align-items: center;
+            }
+
+                .Retailer-SearchSelect {
+                    width: 150px;
+                    height: 50px;
+                    font-size: 14px;
+                    padding: 0 10px;
+                    color: #141414;
+                    border: 1px solid #d2d2d2;
+                    background-color: #F7F7F7;
+                    margin-right: 5px;
+                    cursor: pointer;
+                }
+
+                .Retailer-SearchForm-Measurement {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+            .SearchForm-Button {
+                width: 40%;
+                height: 50px;
+                background-color: #D32E2E;
+                border: none;
+                color: #F7F7F7;
+                font-size: 16px;
+                font-weight: 400;
+                cursor: pointer;
+                transition: all .2s ease-in;
+            }
+                .SearchForm-Button:hover {
+                    background-color: rgb(167, 36, 36);
+                }
+
+
+
+
+
+
+
+
+
+        .SearchForm-FilterSide {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 40px;
+            margin-left: 10px;
+        }
+
+            .SearchForm-FilterTitle {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            .SearchForm-FilterWrap {
+                width: 100%;
+                display: flex;
+            }
+
+                .SearchForm-FilterColumn {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                    .SearchForm-Filter {
+                        margin-bottom:10px;
+                        font-size: 14px;
+                        font-weight: 500;
+
+                        input {
+                            margin-right: 10px;
+                            cursor: pointer;
+                        }
+                    }
+
+
+@media screen and (max-width: 1000px){
+    .Retailer-SearchForm {
+        flex-direction: column;
+    }
+    .SearchForm-SearchSide {
+        width: 98%;
+    }
+    .SearchForm-Button {
+        width: 100%;
+    }
+    .SearchForm-FilterSide {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .Retailer-SearchTitle {
+        font-size: 24px;
+    }
+    .SearchForm-InputWrap {
+        flex-direction: column
+    }
+    .Retailer-SearchInput {
+        margin-bottom: 10px;
+    }
+    .Retailer-SearchSelect {
+        width: 100%;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .SearchForm-FilterWrap {
+        flex-direction: column;
+    }
+    .SearchForm-FilterColumn {
+        width: 100%;
+    }
+    .SearchForm-Filter {
+        margin-bottom: 15px;
+    }
+}

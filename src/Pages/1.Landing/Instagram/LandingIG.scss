@@ -125,13 +125,14 @@
 @media screen and (max-width: 550px){
     .LandingIG-ImagesWrap {
         padding: 35px 20px;
+        justify-self: center;
     }
     .LandingIG-ImagesRow {
         height: 150px;
         margin-bottom: 20px;
     }
     .LandingIG-IGInfoWrap {
-        padding-left: 20px;
+        padding: 0;
     }
     .LandingIG-Title {
         padding-bottom: 20px;
