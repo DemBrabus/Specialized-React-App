@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom';
 import './App.scss';
-import './Styles/Global-Classes.scss';
 import ScrollToTop from './Constant-Components/ScrollToTop/ScrollToTop';
 
 //Constants

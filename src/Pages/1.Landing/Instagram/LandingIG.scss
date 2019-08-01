@@ -122,6 +122,11 @@
     }
 }
 
+@media screen and (max-width: 600px){
+    .LandingIG-Title {
+        font-size: 14px;
+    }
+}
 @media screen and (max-width: 550px){
     .LandingIG-ImagesWrap {
         padding: 35px 20px;

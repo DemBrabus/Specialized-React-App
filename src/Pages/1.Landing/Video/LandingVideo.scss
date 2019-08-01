@@ -25,8 +25,15 @@
         }
 
 
+
 @media screen and (max-width: 800px){
     .LandingVideo-Title {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .LandingVideo-Title {
+        font-size: 14px;
     }
 }

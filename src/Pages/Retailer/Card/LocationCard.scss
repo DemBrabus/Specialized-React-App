@@ -1,0 +1,96 @@
+.LocationCard {
+    width: 100%;
+    position: relative;
+}
+
+    .LocationCard-Wrap {
+        width: 100%;
+        display: flex;
+        padding: 20px 0;
+
+    }
+
+        .LocationCard-NumberColumn {
+            width: 10%;
+            text-align: right;
+            padding-right: 30px;
+        }
+
+            .LocationCard-Number {
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+        .LocationCard-StoreColumn {
+            width: 30%;
+        }
+
+            .LocationCard-StoreName {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+                .LocationCard-Address {
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                    white-space: nowrap;
+                }
+
+                    .LocationCard-Links {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #D32E2E;
+                        text-decoration: underline;
+                        cursor: pointer;
+                        margin-top: 30px;
+                        white-space: nowrap;
+                    }
+                        .LocationCard-Links:hover {
+                            color: rgb(167, 36, 36);
+                        }
+
+        .LocationCard-HoursColumn {
+            width: 30%;
+        }
+
+            .LocationCard-HoursTitle {
+                font-size: 12px;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+
+                .LocationCard-Hours {
+                    font-size: 12px;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                    white-space: nowrap;
+                }
+
+
+@media screen and (max-width: 800px){
+    .LocationCard-StoreColumn {
+        width: 50%;
+    }
+    .LocationCard-HoursColumn {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .LocationCard-Wrap {
+        padding: 10px 20px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .LocationCard-NumberColumn {
+        padding: 0;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .LocationCard-StoreColumn {
+        margin-bottom: 20px;
+    }
+}

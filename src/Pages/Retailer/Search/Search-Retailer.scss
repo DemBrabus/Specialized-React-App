@@ -123,6 +123,9 @@
 
 
 @media screen and (max-width: 1000px){
+    .Search-Retailer {
+        padding: 0 20px;
+    }
     .Retailer-SearchForm {
         flex-direction: column;
     }

@@ -1,6 +1,5 @@
 import React from 'react';
 import './DownHillSection.scss';
-import PreviewCard from '../../../Reusable-Components/PreviewCard/PreviewCard';
 import PrevCardDemoRacer29 from '../../../Cards/Preview/DemoRacer29/PrevCard-DemoRacer29';
 import PrevCardDemoExpert29 from '../../../Cards/Preview/DemoExpert29/PrevCard-DemoExpert29';
 import PrevCardDemoAlloy27 from '../../../Cards/Preview/DemoAlloy27/PrevCard-DemoAlloy27';

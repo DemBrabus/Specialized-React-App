@@ -95,12 +95,17 @@
         width: 80%;
     }
 }
+@media screen and (max-width: 1000px){
+    .Landing-Hero {
+        height: calc(100vh - 70px);
+    }
+}
 @media screen and (max-width: 980px){
     .Landing-Hero-Title {
         font-size: 50px;
     }
     .Landing-Hero-Text {
-        width: 40%;
+        width: 90%;
     }
 }
 
@@ -113,7 +118,7 @@
       font-size: 5vw;
     }
     .Landing-Hero-Text {
-        width: 80%;
+        width: 90%;
     }
     .Landing-Hero-BottomHookWrap {
         right: 0;
@@ -139,7 +144,7 @@
       font-size: 14px;
   }
   .Landing-Hero-Text {
-      width: 70%;
+      width: 80%;
   }
 }
 
