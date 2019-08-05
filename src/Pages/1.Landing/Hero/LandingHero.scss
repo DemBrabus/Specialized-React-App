@@ -1,7 +1,7 @@
 .Landing-Hero {
     width: 100%;
     height: calc(100vh - 90px);
-    background: url('../../../Assets/Images/Landing/LandingHero.png');
+    background: url('../../../Assets/Images/Landing/LandingHero.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -110,24 +110,7 @@
 }
 
 
-@media screen and (max-height: 650px){
-    .Landing-Hero-Content {
-      padding-top: 70px;
-    }
-    .Landing-Hero-Title {
-      font-size: 5vw;
-    }
-    .Landing-Hero-Text {
-        width: 90%;
-    }
-    .Landing-Hero-BottomHookWrap {
-        right: 0;
-        left: auto;
-        padding-right: 40px;
-        text-align: right;
-    }
 
-}
 
 @media screen and (max-width: 600px){
     .Landing-Hero-Content {
@@ -146,6 +129,25 @@
   .Landing-Hero-Text {
       width: 80%;
   }
+}
+
+@media screen and (max-height: 700px){
+    .Landing-Hero-Content {
+      padding-top: 70px;
+    }
+    .Landing-Hero-Title {
+      font-size: 5vw;
+    }
+    .Landing-Hero-Text {
+        width: 100%;
+    }
+    .Landing-Hero-BottomHookWrap {
+        right: 0;
+        left: auto;
+        padding-right: 40px;
+        text-align: right;
+    }
+
 }
 
 @media screen and (max-width: 500px){
